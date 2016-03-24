@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 description: "The relaunch of my blog"
-category: [life, blogging, learning]
+category: learning
 tags: []
 ---
 {% include JB/setup %}
