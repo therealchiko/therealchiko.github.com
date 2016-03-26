@@ -1,15 +1,16 @@
 # Dependencies
 markdown:         redcarpet
 highlighter:      pygments
+extensions: [fenced_code_blocks]
 
 # Permalinks
 permalink:        pretty
 #relative_permalinks: true
 
 # Setup
-title:            Chiko
+title:            Chiko Mukwenha
 tagline:          'Aspiring Software engineer'
-description:      'Thoughts, learnings and general sharebles from me.'
+description:      'Thoughts and learnings from the mind of a web developer.'
 url:              http://chikomukwenha.co
 baseurl:          /
 
@@ -22,7 +23,12 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
+excerpt_separator: <!--more-->
+
 github:
   repo:           https://github.com/therealchiko
+
+social:
+  twitter:        http://twitter.com/therealchiko
 
 gems: [jekyll-paginate]
