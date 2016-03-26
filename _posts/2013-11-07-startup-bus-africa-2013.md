@@ -5,7 +5,7 @@ tags: startups
 ---
 
 Yes, I got accepted to attend the inaugural Start up Bus Africa, a 5 day hackathon on wheels from Harare to Cape Town! This event is bringing different kinds of amazing people from all over the world to form groups and work on some amazing ideas during the trip that we will eventually pitch to Richard Branson! 
-
+<!--more-->
 We are scheduled to pass through Joburg, Bloemfontein, Beaufort Wes to meet and share with other entrepreneurs at all of the hubs along the way.
 
 Every buspreneur was interviewed and you will find amazing stories from Africa's thought leaders here: startupbusafrica.tumblr.com
