@@ -1,6 +1,6 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
 extensions: [fenced_code_blocks]
 
 # Permalinks
@@ -23,7 +23,7 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
-excerpt_separator: <!--more-->
+excerpt_separator:  <!--more-->
 
 github:
   repo:           https://github.com/therealchiko

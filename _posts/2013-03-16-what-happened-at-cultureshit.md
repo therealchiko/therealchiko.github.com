@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What happened at Cultureshift
-excerpt_separator: <!--more-->
+tags: startups
 ---
 
 It’s a few days after the two week [Culture Shift](http://creativeconomy.britishcouncil.org/creative-entrepreneurship/culture-shift/) ideation and hackathon hosted by the British Council, [Jumpstart](http://www.jumpstart.co.zw/) and [Culture Code (UK)](http://www.culturecode.co.uk/) and for most of us, we are still basking in the afterglow. It was a wonderful event hosted to help local artists mingle with the techies and try to hack together some real solutions to their problems.
