@@ -3,6 +3,11 @@ layout: default
 title: Home
 ---
 
+<div class="intro">
+  My name is Chiko Mukwenha and i'm a freelance web developer based in the sunshine city of Harare, Zimbabwe.
+  I have over 4 years of experience in developing for a wide range of clients. I harbour a huge, insatiable appetite for Git, bash scripting and learning new trends.
+</div>
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
@@ -14,7 +19,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.excerpt }}
   </div>
   {% endfor %}
 </div>

@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         kramdown
 highlighter:      rouge
-extensions: [fenced_code_blocks]
+extensions:       [fenced_code_blocks]
 
 # Permalinks
 permalink:        pretty
@@ -10,7 +10,7 @@ permalink:        pretty
 # Setup
 title:            Chiko Mukwenha
 tagline:          'Aspiring Software engineer'
-description:      'Thoughts and learnings from the mind of a web developer.'
+description:      'A web developer from city of Sunshine: Harare, Zimbabwe'
 url:              http://chikomukwenha.co
 baseurl:          /
 
@@ -31,4 +31,4 @@ github:
 social:
   twitter:        http://twitter.com/therealchiko
 
-gems: [jekyll-paginate]
+gems:             [jekyll-paginate]
