@@ -10,6 +10,7 @@ Installing and configuring is a breeze, just like any other Drupal module. Howev
 
 
 ```php
+<?php
 function YOUR-THEME-NAME_preprocess_date_all_day_label()
  { 
     return ""; 
