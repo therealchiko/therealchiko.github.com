@@ -3,7 +3,7 @@ layout: post
 title: "What I learnt pair programming with a senior dev"
 tags: learning c# xamarin agile
 ---
-A couple of weeks ago, I had the pleasure to travel for some pair programming with a senior developer in our team who lives in Cape Town. This being our first meeting, I was really excited to finally meet the guy we all joke is a bot (internal joke). During my time in Strand (quiet city in Cape Town), I learnt some things I like to share. These things became apparent to me **after** our sessions and I think should be considered huge benefits of pairing with someone more senior.
+A couple of weeks ago, I had the pleasure to travel for some pair programming with a senior developer in our team who lives in Cape Town. This being our first meeting, I was really excited to finally meet the guy we all joke is a bot (internal joke). During my time in Strand (quiet city in Cape Town), I learnt some things I'd like to share here. These things became more apparent **after** our sessions and I think they should be considered huge benefits of pairing with someone more senior.
 <!--more-->
 
 ## Thinking through problems
@@ -20,8 +20,8 @@ When programming as part of a team, it's pretty tough to have everyone on the sa
 
 ## Quicker pace of learning
 
-One of the main reasons for my pairing session was that I had to take up a new language (C#) and start developing mobile apps using Xamarin. Not to mention using Couchbasedb, so in essence it was a full, new stack I had to familiarize myself with. After having had a crack at it on my own, I couldn't contribute effectively even though I was _really_ *really* loving C# and the ease of use of Xamarin. Pair programming in this instance, helped me a lot. Having someone clearly explain with thorough understanding of my coding background helped me get acquainted and navigate some tricky areas that could have tripped me up in no time.
+One of the main reasons for my pairing session was that I had to take up a new language (C#) and start developing mobile apps using Xamarin. Not to mention using Couchbasedb, so in essence it was a full, new stack I had to familiarize myself with. After having had a crack at it on my own, I couldn't contribute effectively even though I was _really_ *really* loving C# and the ease of use of Xamarin. Pair programming in this instance, helped a lot. Having someone with a thorough understanding of my coding background explain ways to solve problems from my point of view helped me get acquainted and navigate some tricky areas that could have tripped me up in no time.
 
-More importantly, in the words of the senior dev pair programming also helped him understand _my_ weaknesses and strengths, different from seeing stackoverflow-adapted 'fixes' so he's now very well placed to give very actionable, concise direction & help. All in all it was a great trip and I pair programming has risen to the top of must-do's!
+More importantly, in the words of the senior dev pair programming also helped him understand _my_ weaknesses and strengths, different from seeing stackoverflow-adapted 'fixes' so he's now well placed to give actionable, concise direction & help. All in all it was a great trip and pair programming has without doubt risen to the top of my must-do's!
 
 Thanks for reading.
