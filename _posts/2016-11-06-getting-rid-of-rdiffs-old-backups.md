@@ -14,12 +14,13 @@ As it turns out, rdiff-backup does come with a handy tool to configure it to del
 Running that works like magic but I realized we could have an automated recipe to run a cron job right after each backup is saved. Let's proceed and do that:
 
 touch /etc/cron.daily/remove_old.sh (don't forget to make it an executable)
+
 ```
 #!/bin/bash
 rdiff-backup --remove-older-than 4W target-dir
 ```
 
-Now we can quickly configure our cronjob to run after the time when rdiff has run its backup:
+Now we configure our cronjob to run after the time when rdiff-backup has run its backup:
 
 crontab -e
 ```
