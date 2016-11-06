@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Getting rid of rdiff's old backups"
+title: "Getting rid of rdiff-backup's incremental backups"
 tags: unix terminal automation
 ---
 Recently I had to help with maintenance of a server that I didn't configure myself that had maxed out its storage (the horror!). Anyway, it took me some time to figure out it was using the handy and useful [rdiff-backup](http://rdiff-backup.nongnu.org/) package to create and store backups automatically. Rdiff-backup's mission is succinctly put as _an idea is to combine the best features of a mirror and an incremental backup_
