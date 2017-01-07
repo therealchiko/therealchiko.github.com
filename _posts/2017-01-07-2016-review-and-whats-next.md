@@ -5,7 +5,7 @@ tags: 2016 goals planning programming c# php javascript travel
 ---
 I almost always set goals for the year. In 2016 I had a bunch of goals and I think it's fair to say I achieved about 50% of them, which has me beaming! I came to the comforting conclusion about two years ago that I'm in a marathon and my prophetic powers being what they're (non-existant), estimating time is tough but I sure as hell have an idea about my direction. With that out of the way, here's how my 2016 turned out to be:
 
-+ I started working with the incredible folks at [Onesheep.org](www.onesheep.org). This is arguably the best bunch of people i've come across!
++ I started working with the incredible folks at [Onesheep.org](http://www.onesheep.org). This is arguably the best bunch of people i've come across!
 + I participated in the C4K Hackathon and our team came an impressive second. Yay
 <!--more-->
 + My total gross income reached 60% of the total target for the year
