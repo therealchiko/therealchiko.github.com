@@ -7,6 +7,7 @@ I almost always set goals for the year. In 2016 I had a bunch of goals and I thi
 
 + I started working with the incredible folks at [Onesheep.org](www.onesheep.org). This is arguably the best bunch of people i've come across!
 + I participated in the C4K Hackathon and our team came an impressive second. Yay
+<!--more-->
 + My total gross income reached 60% of the total target for the year
 + I learned a lot, in terms of programming and growing my skillset. My goal here was to master PHP, Python and become a Javascript Ninja. I haven't yet reached the point of mastery, I traded C# for Python and along the way I did a lot of PHP and Javascript. I can't call a win in this category but i'd say I set a good foundation going forward.
 + My other small goal was to make $300 as passive income per month, I've ended up at $150 so clear win here.
