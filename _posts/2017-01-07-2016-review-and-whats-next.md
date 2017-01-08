@@ -15,7 +15,7 @@ I almost always set goals for the year. In 2016 I had a bunch of goals and I thi
 + I had two very enlightening relationships which unfortunately ended because of differences after 4 months each. So for 2017, i'm on a clean slate! 
 + I took up photography as a hobby albeit not a serious one, something I need to work on for next year.
 
-Watching Mark Zuckerberg's Jarvis project, it occurred to me that I should surely set some big, audacious goals. Whilst in the U.K at SheepCon, we took time to aim for some moonshots. It was at that point I realized I might have been playing it safe for a while. Sharing goals helps a lot when it comes to knowing your own scale and how far you can aim. As a result I came away inching for the year to end and put some new goals down.
+Watching Mark Zuckerberg's Jarvis project, it occurred to me that I should surely set some big, audacious goals. Whilst in the U.K at SheepCon, we took time to aim for some moonshots. It was at that point I realized I might have been playing it safe for a while. Sharing goals helps a lot when it comes to knowing your own scale and how far you can/should aim. As a result I came away itching for the year to end and put some new goals down.
 
 In 2017, I've decided to focus on the following:
 
@@ -32,7 +32,7 @@ My approach to this is to take online courses (MOOCS) from top universities on c
 8. **Relationship goal is to become a bit more stable and land a partner who shares and agrees with core beliefs**
 9. **I want to increase passive income and revenue from hobbies and side projects to $400 per month.**
 
-That's it for you, i'll be updating this blog with progress and what i'll be doing and working on.
+I'll be updating this blog with progress and what i'll be working on through the year.
 
-Thanks for reading, got any comments, just post below.
+Thanks for reading! If you got any comments, just post below.
 
