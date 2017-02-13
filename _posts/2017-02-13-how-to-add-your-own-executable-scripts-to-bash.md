@@ -11,7 +11,7 @@ Without further ado, let's create a small script that will shutdown the laptop w
 
 `c.restart`
 
-###1st Approach - using an alias
+### 1st Approach - using an alias
 Easiest way to do this is to create an alias for the command you'd normally type in the terminal. Open up your ~/.bashrc and enter the following:
 
 ```bash
@@ -28,7 +28,7 @@ source ~/.bashrc
 You can test if it's working by typing **c.restart** after that you should be asked for password before your computer restarts. (Since this is just for demo purposes you can enter a wrong one three times if you don't want to restart).
 
 
-###2nd Approach - adding an executable script to your bin directory
+### 2nd Approach - adding an executable script to your bin directory
 
 What we are going to do here is add a private bin directory with all the scripts you'll later write. This is a good practice because it separates some important defaults from your own personal scripts you'd want to access easily.
 
