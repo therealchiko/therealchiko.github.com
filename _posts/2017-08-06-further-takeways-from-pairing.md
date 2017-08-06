@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Further takeways from pairing"
+title: "Recent takeaways from pairing"
 description: ""
 tags: pairing coding vuejs learning
 ---
