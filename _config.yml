@@ -13,6 +13,7 @@ tagline:          'Software Developer'
 description:      "I'm a full stack developer. I live in Sunshine City, a place near the bottom tip of Africa!"
 url:              http://chikomukwenha.co
 baseurl:          /
+reading:          /reading
 
 author:
   name:           'Chiko'
@@ -31,4 +32,4 @@ github:
 social:
   twitter:        http://twitter.com/therealchiko
 
-gems:             [jekyll-paginate]
+plugins:             [jekyll-paginate]
