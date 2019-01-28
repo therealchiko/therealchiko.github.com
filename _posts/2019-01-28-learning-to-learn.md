@@ -7,7 +7,7 @@ tags: work learning goals
 
 When was the last time you thought about how you should be learning? Many people go through formal education just immersed in different kinds of learning methods and are never really taught to visit the motive behind the approaches, or to see if it's the best for them.  This has always bothered me because I enjoy learning, and quickening the speed of it whilst reaping all the benefits I should has been a prime goal. A few weeks ago I decided to enroll in the free course: Learning to learn by Terrence Sejnowski and Barbara Oakley on Coursera. This blog post will outline some of the things I have found helpful and a great many insights about learning itself.
 
-<!-- more -->
+<!--more-->
 
 # Different ways of thinking
 According to research, there are two different ways of thinking. I grew up playing chess and the "focused" way of thinking is very much akin to a chess player's focus when either preparing, analyzing or playing a game. As a chess player you thrive on silence so your brain can "lock in" and help you recall familiar moves and strategies. This method of thinking is aptly named: focused thinking. We often engage in this way of thinking when we are mustering all our powers of focus to help our brain grasp something, or work out a problem. When it comes to programming/coding you will find many coders cracking their head to get to a solution. Often times people believe this is the ONLY way to get to the best solution or work out a bottleneck. That's not entirely correct.
