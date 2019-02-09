@@ -6,7 +6,7 @@ tags: []
 ---
 I couldn't help but nod my head the entire length of the blog post written by Jeremy Wagner on [make it boring](https://jeremy.codes/blog/make-it-boring/). It's not often that I find someone literally following my train of thought so succinctly, albeit from their own unique angle. The principle behind the post is that boring things are the big stones to be put in first.
 
-<!-- more -->
+<!--more-->
 
 From my early experiences in life, I quickly noticed that people who had observably less than glamorous lifestyles and careers, seemed to enjoy the best of life. The dichotomy made it clear that people who actually showed the greatest want of fun, glamour, etc found those things to be quite elusive. So as a child, I quickly realized and ingrained in myself that to become good at something, one has to be willing to do the dirty, boring work everyone tries to avoid. People whose primary goal is fun and adventure literally stand in their way of attaining that, due to failure to do the hard work first of simply getting money and influence so doors can open. It's quite perplexing but we usually put the cart before the horse. Due to different experiences, I have come to appreciate the importance of "boring".
 
