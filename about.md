@@ -3,7 +3,7 @@ layout: page
 title: About
 ---
 
-Hi there! 
+Hi there!
 
 My name is Chiko Mukwenha and i'm a freelance web developer. I'm based in the
 sunshine city of Harare, Zimbabwe (GMT +2) and specialize in Drupal, Laravel, CodeIgniter and I dabble in frontend as well. I harbour a huge, insatiable appetite for Git and general bash scripting.
