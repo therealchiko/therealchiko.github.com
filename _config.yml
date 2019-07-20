@@ -1,35 +1,35 @@
 # Dependencies
-markdown:         kramdown
-highlighter:      rouge
-extensions:       [fenced_code_blocks]
+markdown: kramdown
+highlighter: rouge
+extensions: [fenced_code_blocks]
 
 # Permalinks
-permalink:        pretty
+permalink: pretty
 #relative_permalinks: tru
 
 # Setup
-title:            Chiko Mukwenha
-tagline:          'Software Developer'
-description:      "I'm a full stack developer. I live in Sunshine City, a place near the bottom tip of Africa!"
-url:              http://chikomukwenha.co
-baseurl:          /
-reading:          /reading
+title: Chiko Mukwenha
+tagline: "Software Developer"
+description: "I'm a full stack developer, a digital nomad currently livinig in the Southern parts of Africa."
+url: http://chikomukwenha.co
+baseurl: /
+reading: /reading
 
 author:
-  name:           'Chiko'
-  url:            https://twitter.com/therealchiko
+  name: "Chiko"
+  url: https://twitter.com/therealchiko
 
-paginate:         5
+paginate: 5
 
 # Custom vars
-version:          2.1.0
+version: 2.1.0
 
-excerpt_separator:  <!--more-->
+excerpt_separator: <!--more-->
 
 github:
-  repo:           https://github.com/therealchiko
+  repo: https://github.com/therealchiko
 
 social:
-  twitter:        http://twitter.com/therealchiko
+  twitter: http://twitter.com/therealchiko
 
-plugins:             [jekyll-paginate]
+plugins: [jekyll-paginate]
