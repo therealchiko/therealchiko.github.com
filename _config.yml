@@ -30,6 +30,6 @@ github:
   repo: https://github.com/therealchiko
 
 social:
-  twitter: http://twitter.com/therealchiko
+  twitter: https://twitter.com/therealchiko
 
 plugins: [jekyll-paginate]
