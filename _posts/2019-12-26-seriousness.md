@@ -31,19 +31,19 @@ On culture, again:
 
 On being able to understand and create a bond with players:
 
-> You (the coach) are like a heart surgeon, I need to understand the feelings, I need to scrach there and understand how they feel. If i am able to do that and they feel that they can trust me, I will understand the decisions and behaviours much better and then the communication will improve.
+> You (the coach) are like a heart surgeon, I need to understand the feelings, I need to scratch there and understand how they feel. If i am able to do that and they feel that they can trust me, I will understand the decisions and behaviours much better and then the communication will improve.
 
 Here is the full interview:
 
 <iframe width="600" height="400" src="https://www.youtube.com/embed/OUA3ixJQthA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-To say I was awed would be an understatement. For someone who has not been a manager of a top club, I was impressed by how clear and articulate Arterta communicated his vision and demands.
+To say I was awed would be an understatement. For someone who has not been a manager of a top club, I was impressed by how clear and articulate Arteta communicated his vision and demands.
 
 Now let's come back to boxing where this concept of being serious has grave consequences (on health and performance), whilst also being easy to judge. As a huge fan of boxing I sift through a lot of tape of boxers practicing for big matches; I love the mental game and I feel warm inside when the hard grit and pushing back of boundaries is rewarded at the end of a tense encounter. On the topic of seriousness though, let me take you through a couple of interesting fights that happened in 2019.
 
-### Jarrett Swift Vs Williams
+### Jarrett "Swift" Hurd Vs Julian Williams
 
-A couple of months before this bout, Jarrett Swift was looking like a solid champion. He's a guy that does get touched (hit) though, his defense is not the best but he was a champion who defended his belt a few times and was the favorite going into the fight with Williams. Williams had lost dismally to Jermell Charlo by being brutally knocked out. Everything seemed to be pointing to a Hurd victory (he broke into song at one of the pre-fight press conferences). Willams, the underdog, physcially dominated and dropped Hurd on his way to a clear, unanimous victory. After the match, it became clear how much work Williams had put in to win that fight. This quote after the match sums it all up:
+A couple of months before this bout, Jarrett Hurd was looking like a solid champion. He's a guy that does get touched (hit) though, his defense is not the best but he was a champion who defended his belt a few times and was the favorite going into the fight with Williams. Williams had lost dismally to Jermell Charlo by being brutally knocked out. Everything seemed to be pointing to a Hurd victory (he broke into song at one of the pre-fight press conferences). Willams, the underdog, physcially dominated and dropped Hurd on his way to a clear, unanimous victory. After the match, it became clear how much work Williams had put in to win that fight. This quote after the match sums it all up:
 
 > “They told me I was done, that I had no chin,” Williams said. “Jarrett’s such a great fighter and he pushed me. I got so motivated because everybody was doubting me. I turned my Twitter off, I turned my Instagram off. I blocked out all the good stuff, I blocked out all the bad stuff. The boxing world, they make it seem like fighters take a loss and they can’t come back, and I just knew that wasn’t the case. Stop condemning fighters after they take a loss.”
 
