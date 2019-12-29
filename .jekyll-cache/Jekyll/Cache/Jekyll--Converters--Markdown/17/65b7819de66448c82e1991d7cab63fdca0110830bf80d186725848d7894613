@@ -1,0 +1,77 @@
+I"�<p>I was recently asked by a friend how the output from Views can be themed easily. I’m going to show you an easy way for pure Drupal n00bs to control the look and feel of their website. This tutorial does not require much coding skill, just some CSS knowledge and the ability to use Views is enough.
+<!--more--></p>
+
+<h3 id="modules">Modules</h3>
+
+<p><a href="http://www.drupal.org/project/views">Views</a></p>
+
+<p><a href="http://www.drupal.org/project/semanticviews">Semantic Views</a></p>
+
+<p>Please download the above modules at their project pages. On a side note, get the recommended versions (usually these are ready for prime time on live sites.) For clarity’s sake, I’m going to use a token <strong>[yourwebsite]</strong> as a substitute for your Drupal Website’s URL.</p>
+
+<ol>
+  <li>
+    <p>After installing the modules go to the modules Admin page and enable them.</p>
+  </li>
+  <li>
+    <p>Visit the Views Admin page at [yourwebsite]<strong>/admin/build/views</strong>. Click <strong>Add</strong> and create a new view of <strong>View Type: Node</strong>. Click Next.</p>
+  </li>
+  <li>
+    <p>I hope you have some content on your website, if not you can use the <a href="http://www.drupal.org/project/devel">Devel</a> module and auto generate some demo nodes.</p>
+  </li>
+  <li>
+    <p>Under fields in Views, Click Add to put some fields.</p>
+  </li>
+</ol>
+
+<p>Choose the fields <strong>Node: Body</strong> and <strong>Node: Title</strong>. Don’t bother with changing any other settings.</p>
+
+<p>Rearrange the fields so that the Node Title is above the Node Body.</p>
+
+<ol>
+  <li>
+    <p>Now lets use Views Semantics for the styling. On the View’s page go and click on <strong>Style: Unformatted</strong>, choose <strong>Semantic Views</strong> from the options that appear. Click <strong>Update</strong>.</p>
+  </li>
+  <li>
+    <p>From the settings that appear now, leave everything as is and Click Update again.</p>
+  </li>
+  <li>
+    <p>Now go and click <strong>Row Style: Fields</strong> link. Change the settings from Fields to <strong>Semantic Views: Fields</strong>. Click <strong>Update</strong> and you will be presented with options to define html tags and CSS class names on fields.</p>
+  </li>
+  <li>
+    <p>Click <strong>Update</strong> to save our style settings. Next go right ahead and Click <strong>Save</strong>. We are done with configuring a very simple View.</p>
+  </li>
+  <li>
+    <p>Next Up, lets style our View for a slick presentation. Copy the following code to your CSS files of your active theme.</p>
+  </li>
+</ol>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">div</span><span class="nc">.newbodyclass</span><span class="p">{</span>
+
+    <span class="nl">background</span><span class="p">:</span> <span class="nb">none</span> <span class="nb">repeat</span> <span class="nb">scroll</span> <span class="m">0</span> <span class="m">0</span> <span class="m">#DDDDDD</span><span class="p">;</span>
+    
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span>
+    
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">6px</span><span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="nt">div</span><span class="nc">.newnodetitle</span><span class="p">{</span>
+    
+    <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="m">#BBBBBB</span><span class="p">;</span>
+    
+    <span class="nl">color</span><span class="p">:</span> <span class="no">navy</span><span class="p">;</span>
+    
+    <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">bold</span><span class="p">;</span>
+    
+    <span class="nl">padding-bottom</span><span class="p">:</span> <span class="m">4px</span><span class="p">;</span>
+
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ol>
+  <li>Voila! We got our basic style for a View generated page now.</li>
+</ol>
+
+<p><em>I’d appreciate your feedback on this tutorial. This is part one of my tutorials on Views. To keep updated on new posts, follow me on Twitter <a href="http://www.twitter.com/therealchiko">@therealchiko</a></em></p>
+:ET

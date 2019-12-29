@@ -1,0 +1,30 @@
+I"�<p>Recently I had to help with maintenance of a server that I didn’t configure myself that had maxed out its storage (the horror!). Anyway, it took me some time to figure out it was using the handy and useful <a href="http://rdiff-backup.nongnu.org/">rdiff-backup</a> package to create and store backups automatically. Rdiff-backup’s mission is succinctly put as <em>an idea is to combine the best features of a mirror and an incremental backup</em></p>
+
+<p>As it turns out, rdiff-backup does come with a handy tool to configure it to delete backups that are x-days old e.g 4 weeks:</p>
+
+<p><code class="highlighter-rouge">rdiff-backup --remove-older-than 4W target-dir</code></p>
+
+<!--more-->
+
+<p>Running that works like magic but I realized we could have an automated recipe to run a cron job right after each backup is saved. Let’s proceed and do that:</p>
+
+<p>touch /etc/cron.daily/remove_old.sh (don’t forget to make it an executable)</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+rdiff-backup <span class="nt">--remove-older-than</span> 4W target-dir
+</code></pre></div></div>
+
+<p>Now we configure our cronjob to run after the time when rdiff-backup has run its backup:</p>
+
+<p>crontab -e</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>00 5 * * *  /etc/cron.daily/remove_old.sh
+</code></pre></div></div>
+
+<p>And that’s it! We have a cron job that prunes our directory for space every day at 5am.</p>
+
+<p>To test if your script runs, test cron jobs like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run-parts /etc/cron.daily
+</code></pre></div></div>
+
+:ET
