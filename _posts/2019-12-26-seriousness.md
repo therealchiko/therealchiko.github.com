@@ -13,7 +13,7 @@ On belief:
 
 On culture:
 
-> ...I know what a winning culture is and should look like, which is for me, the most imporant thing.
+> ...I know what a winning culture is and should look like, which is for me, the most important thing.
 
 <!--more-->
 

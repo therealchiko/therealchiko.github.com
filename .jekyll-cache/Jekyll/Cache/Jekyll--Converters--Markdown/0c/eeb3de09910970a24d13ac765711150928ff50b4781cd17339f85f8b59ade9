@@ -1,0 +1,247 @@
+I".Y
+<h3 id="-seriousness-"><a href="/2019/12/26/seriousness/"> Seriousness </a></h3>
+
+<p>26 Dec 2019</p>
+
+<p>I am a huge Arsenal supporter. I started loving the club because they wore a shade of red I liked when I was young. As the years rolled by with Arsene Wenger as coach, I got to like his approach and method of putting the club’s values first, before victories. Arsenal was one of the clubs that could lose beautifully which would leave conflicting emotions in supporters after a game, yes points would have been lost but you would also recall special, magical moments created on the field which would make you overlook the final result. Since Wenger left though, the club has been in a bit of a tailspin. Unai Emery who took over about 2 years ago failed to win the fans over because of an unattractive style of play and few victories which eventually culminated in his sacking. In his place, Mikel Arterta, a former captain was put at the the helm. While watching his first video as Arsenal coach the idea of this blog post came about. It was refreshing to hear how clear he was about what it takes for Arsenal to get back to greatness. One theme that I took away, is how serious he approaches his work and the level he requires of everyone who will contribute.</p>
+
+<p>On belief:</p>
+
+<blockquote>
+  …I want to start working with them (the players), I want to start looking in their eyes…
+</blockquote>
+
+<p>On culture:</p>
+
+<blockquote>
+  …I know what a winning culture is and should look like, which is for me, the most important thing.
+</blockquote>
+
+<h3 id="-leaving-awesome-onesheep-"><a href="/2019/07/20/leaving-awesome-onesheep/"> Leaving awesome OneSheep </a></h3>
+
+<p>20 Jul 2019</p>
+
+<p>This is a post that I didn’t foresee myself writing for the last 3 or 4 years. It is amazing how long but short that time has been. Every day was always so fresh and full of promise, all because of the wonderful folks I was working with. I remember it like yesterday when I got the offer to become a full time contractor at <a href="https://onesheep.org">OneSheep</a>. Having been a Drupal contractor 2 years prior, I jumped at the chance to work on some awesome (and very diverse projects) and what a whirlwind it’s been with so many great memories made!</p>
+
+<p><img src="https://lh3.googleusercontent.com/tFh3qRi0vUq-fo-EhlloexK3H2wlHK0sahIhws4RySKTenSI-pixtn6VKiuu0PoiTkFEinw-bgt9OSe2_CjZc-03q1VFPY22ODgbs0dtqZAoGk5k316RqaQBbcR5AXcIKP3F0asPBR8=w2400" />
+A picture taken during Sheepcon 2019, in Cape Town.</p>
+
+<h3 id="-ignore-changes-to-specific-git-files-"><a href="/2019/05/18/ignoring-files-from-git-commits/"> Ignore changes to specific git files </a></h3>
+
+<p>18 May 2019</p>
+
+<p>There are times when you are working on something that should not be committed even though it has changed. In this instance, it’s not wise to add the changed files to <code class="highlighter-rouge">.gitignore</code>:</p>
+
+<ul>
+  <li>maybe because the file(s) should always remain in the repo</li>
+  <li>or suppose it’s a config file with your private key for a service you are using locally, not everyone on the team even uses it.</li>
+</ul>
+
+<p>Whatever the case, git has an easy way for this: <code class="highlighter-rouge">git update-index</code>! Here is how it works:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git update-index <span class="nt">--assume-unchanged</span> <span class="o">[</span>path_to_file]
+</code></pre></div></div>
+
+<p>This simple rule will delist/hide all changes on that file in future commits. That means you are free to edit the file locally and the changes won’t be staged nor pushed upstream! Listing the file again is straightforward:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git update-index <span class="nt">--no-assume-unchanged</span> <span class="o">[</span>path_to_file]
+</code></pre></div></div>
+
+<p>Whilst the commands are handy, they do not come with an easy way to untrack an entire folder, which is not-great. However, this can be easily done by a bash command that can list all files you want to “untrack” locally and transverse that list, updating each file’s entry in the git index.</p>
+
+<p>Update-index is a command that does exactly what it describes, it tells git to update its index for the tracked file it is given. When we set that entry of the file in the index to <code class="highlighter-rouge">assume-unchanged</code> what that does is tell Git to simply ignore anything that happens to that file. This results in performance gains via unburdening Git from doing unnecessary indexing on files we no longer care about. However, keep in mind that should the file be changed upstream, when merging commits, Git will still ignore it locally so it does introduce an extra step to be aware of.</p>
+
+<p>Lastly the commands are pretty long. An easy way I use to set them to something friendlier is by aliasing them in my <code class="highlighter-rouge">gitconfig</code> file as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">[</span><span class="nb">alias</span><span class="o">]</span>
+assume-unchanged <span class="o">=</span> update-index <span class="nt">--assume-unchanged</span>
+assume-changed <span class="o">=</span> update-index <span class="nt">--no-assume-unchanged</span>
+</code></pre></div></div>
+
+<p>After this change, you can easily call: <code class="highlighter-rouge">git assume-unchanged [file]</code>!</p>
+
+<p>As always thank you for reading, if you have tips or advice or other ways you handle this, please fire away in the comments below.</p>
+
+<h3 id="-i-agree-with-boring-"><a href="/2019/02/09/i-agree-with-boring/"> i agree with boring </a></h3>
+
+<p>09 Feb 2019</p>
+
+<p>I couldn’t help but nod my head the entire length of the blog post written by Jeremy Wagner on <a href="https://jeremy.codes/blog/make-it-boring/">make it boring</a>. It’s not often that I find someone literally following my train of thought so succinctly, albeit from their own unique angle. The principle behind the post is that boring things are the big stones to be put in first.</p>
+
+<h3 id="-learning-to-learn-"><a href="/2019/01/28/learning-to-learn/"> Learning to learn </a></h3>
+
+<p>28 Jan 2019</p>
+
+<p>When was the last time you thought about how you should be learning? Like many, I realized I went through formal education immersed in different kinds of learning methods but remained oblivious to reasons for using them. This has always bothered me because I enjoy learning, a lot and quickening the speed of it whilst reaping all the benefits, is the ultimate goal. With that motive in mind, I decided to enroll in the free course: <a href="https://www.coursera.org/learn/learning-how-to-learn">Learning to learn</a> by Terrence Sejnowski and Barbara Oakley on Coursera. This blog post will outline some of the insights I have found helpful.</p>
+
+<h3 id="-2018-"><a href="/2019/01/13/2018/"> 2018 </a></h3>
+
+<p>13 Jan 2019</p>
+
+<p>As is custom, at the end or start of year I share my goals and progress as we close and open new chapters. I don’t think there’s an actual chapter closed or opened, it’s comforting to think about it that way but i think life is a continuos stream of … life events that ultimately define our entire existence, there is no break. None. Whatever it may look like, it is a continuation. It’s a mere formality then to state that the last year and all that took place had been a long time coming, whether we acknowledge it or not.</p>
+
+<p>Comparing what my aims were at the end of 2017 and now, I cannot help but feel like I am no longer as open with some of my ideas, goals etc. The reasons behind that are not quite apparent to me, but going through last year’s post I even marvelled at how much I shared about my life and where I intended to go. I sure do hope to investigate my reasons for initially defaulting to scraping the surface with this blog post.</p>
+
+<h3 id="-recent-takeaways-from-pairing-"><a href="/2017/08/06/further-takeways-from-pairing/"> Recent takeaways from pairing </a></h3>
+
+<p>06 Aug 2017</p>
+
+<p>A couple of weeks ago, my workmate paid a visit to Harare from his place in Cape Town for some pair programming, again (yay!). After having had a head start in coding a web app for a mobile application (built with Xamarin), the objective was to quickly knock it into shape and ship it out. I had chosen VueJS for the frontend (because it’s awesome), supported by an API in Laravel - to maintain consistency with the mobile app, we wanted everything to remain exactly the same. During the time of pairing, I learned even more lessons than the other times when I have paired with other programmers.</p>
+
+<h3 id="-working-time-"><a href="/2017/04/04/working/"> Working time </a></h3>
+
+<p>04 Apr 2017</p>
+
+<p>For the past few weeks, actually since the start of the year, i’ve experienced the most turbulent of times in terms of my daily schedule. Really i wish I was Cerberus, or could teleport to Mars and have slightly longer days. I’ve been under massive, gargantuan pressure to code, exercise, plan, reply emails and continue being a human <a href="http://sebastianmarshall.com/if-you-want-to-get-rich-stop-being-a-fucking-joker">who’s not a joker</a>.</p>
+
+<h3 id="-how-to-add-your-own-executable-scripts-to-bash-"><a href="/2017/02/13/how-to-add-your-own-executable-scripts-to-bash/"> How to add your own executable scripts to bash </a></h3>
+
+<p>13 Feb 2017</p>
+
+<p>I have been enjoying the book Effective Engineer by Edmond Lau. One of the great tricks of becoming more effective is to set workflows that make you do more, much faster. I have ended up setting a few scripts to automate a lot of bash commands such as ssh-ing, using git etcetera and in this short primer i’d love to show total newbies how to have your own executable scripts from any place on your system.</p>
+
+<p>The first thing to note here is Mac OS has a few candidate files in your home folder that it indexes for commands to use in every bash window. On my system, I prefer to use ~/.bash_rc mainly because it is loaded up when a new instance of a terminal window is opened compared to ~/.bash_profile which is loaded up at login.</p>
+
+<h3 id="-2016-review-and-whats-next-"><a href="/2017/01/07/2016-review-and-whats-next/"> 2016 review and what’s next </a></h3>
+
+<p>07 Jan 2017</p>
+
+<p>I almost always set goals for the year. In 2016 I had a bunch of goals and I think it’s fair to say I achieved about 50% of them, which has me beaming! I came to the comforting conclusion about two years ago that I’m in a marathon and my prophetic powers being what they’re (non-existant), estimating time is tough but I sure as hell have an idea about my direction. With that out of the way, here’s how my 2016 turned out to be:</p>
+
+<ul>
+  <li>I started working with the incredible folks at <a href="http://www.onesheep.org">Onesheep.org</a>. This is arguably the best bunch of people i’ve come across!</li>
+  <li>I participated in the C4K Hackathon and our team came an impressive second. Yay</li>
+</ul>
+
+<h3 id="-getting-rid-of-rdiff-backups-incremental-backups-"><a href="/2016/11/06/getting-rid-of-rdiffs-old-backups/"> Getting rid of rdiff-backup’s incremental backups </a></h3>
+
+<p>06 Nov 2016</p>
+
+<p>Recently I had to help with maintenance of a server that I didn’t configure myself that had maxed out its storage (the horror!). Anyway, it took me some time to figure out it was using the handy and useful <a href="http://rdiff-backup.nongnu.org/">rdiff-backup</a> package to create and store backups automatically. Rdiff-backup’s mission is succinctly put as <em>an idea is to combine the best features of a mirror and an incremental backup</em></p>
+
+<p>As it turns out, rdiff-backup does come with a handy tool to configure it to delete backups that are x-days old e.g 4 weeks:</p>
+
+<p><code class="highlighter-rouge">rdiff-backup --remove-older-than 4W target-dir</code></p>
+
+<h3 id="-what-i-learnt-pair-programming-with-a-senior-dev-"><a href="/2016/10/17/what-i-learnt-pair-programming-with-a-senior-dev/"> What I learnt pair programming with a senior dev </a></h3>
+
+<p>17 Oct 2016</p>
+
+<p>A couple of weeks ago, I had the pleasure to travel for some pair programming with a senior developer in our team who lives in Cape Town. This being our first meeting, I was really excited to finally meet the guy we all joke is a bot (internal joke). During my time in Strand (quiet city in Cape Town), I learnt some things I’d like to share here. These things became more apparent <strong>after</strong> our sessions and I think they should be considered huge benefits of pairing with someone more senior.</p>
+
+<h3 id="-connecting-dots-"><a href="/2014/09/28/connecting-dots/"> Connecting Dots </a></h3>
+
+<p>28 Sep 2014</p>
+
+<p>In his famous Stanford commencement address, Steve Jobs said something about connecting the dots and how you can only do that after the fact. The first time I heard that, it didn’t shake my thinking; actually I dismissed it offhandedly without putting much thought into it. Not that I didn’t think it wasn’t true nor profound but like most things in life, hands-on experience is often more hard hitting than simple, verbal advice.</p>
+
+<h3 id="-better-breadcrumbs-for-your-drupal-7-site-"><a href="/2014/03/30/better-breadcrumbs-for-your-drupal-7-site/"> Better breadcrumbs for your Drupal 7 site </a></h3>
+
+<p>30 Mar 2014</p>
+
+<p>Often times when creating custom modules for Drupal, we get confronted with the problem of setting friendly but useful breadcrumbs. The contribution a clearly set breadcrumb can make on a page can never be understated, it guides the user on where they’re coming from and currently are.</p>
+
+<h3 id="-startup-bus-africa-2013-"><a href="/2013/11/07/startup-bus-africa-2013/"> Startup Bus Africa 2013 </a></h3>
+
+<p>07 Nov 2013</p>
+
+<p>Yes, I got accepted to attend the inaugural Start up Bus Africa, a 5 day hackathon on wheels from Harare to Cape Town! This event is bringing different kinds of amazing people from all over the world to form groups and work on some amazing ideas during the trip that we will eventually pitch to Richard Branson! </p>
+
+<h3 id="-sink-or-swim-"><a href="/2013/10/15/sink-or-swim/"> Sink or swim </a></h3>
+
+<p>15 Oct 2013</p>
+
+<p>Lesson learnt: FIGHT YOUR FEARS! So yesterday I got home after a weekend at my sister’s only to realize I didn’t have the keys to the apartment. I HAD to get inside the flat though, I had a meeting scheduled for 12 noon. The only way was to get into the flat through a small little window, at the top there (see attached pic) Seemed like the most daring operation, lol growing up I hadn’t climbed houses like my peers would possibly confess they so often did.</p>
+
+<h3 id="-removing-all-day-label-from-drupal-calendar-module-"><a href="/2013/08/30/removing-all-day-label-from-drupal-calendar/"> Removing all-day label from Drupal calendar module </a></h3>
+
+<p>30 Aug 2013</p>
+
+<p>If you’re new to Drupal, let me tell you something, the <a href="http://drupal.org/project/date">Date</a> module is a must-install! It comes with some awesome functionality and a date API that enables you to add date fields to different content types, even entities in Drupal 7!</p>
+
+<h3 id="-how-to-theme-views-output-drupal-67-"><a href="/drupal/2013/08/30/how-to-theme-views-output-drupal-6-7/"> How to theme Views output Drupal 6/7 </a></h3>
+
+<p>30 Aug 2013</p>
+
+<p>I was recently asked by a friend how the output from Views can be themed easily. I’m going to show you an easy way for pure Drupal n00bs to control the look and feel of their website. This tutorial does not require much coding skill, just some CSS knowledge and the ability to use Views is enough.</p>
+
+<h3 id="-guide-to-securing-joomla-v15-sites-"><a href="/2013/08/30/guide-to-securing-joomla-sites-15/"> Guide to securing Joomla v1.5 sites </a></h3>
+
+<p>30 Aug 2013</p>
+
+<p>My Linux installation crashed this morning which got me thinking so much about doing regular backups and making sure everything is secure. It’s been a weird week really, one of my mates got his website hacked too so I’ve had to think a lot on web security as well. I’m a Drupaler and he was running Joomla!, the CMS I dabbled in when I got started into web development. I hope to show you some of the cool things one can do to secure a Joomla! Site, with hacktivists on the prowl now more than ever (for better or worse) it helps to take measures against seeing the photo my friend woke up to find .</p>
+
+<h3 id="-africa-is-killing-it-in-thinking-"><a href="/2013/08/30/africa-killing-it-in-thinking/"> Africa is killing it in thinking </a></h3>
+
+<p>30 Aug 2013</p>
+
+<p>Disclaimer: this is in response to a post written by Sam Chipangura on his blog here:<br />
+<a href="http://takunda.tumblr.com/post/18998396482/is-africa-killing-it-in-the-classroom">http://takunda.tumblr.com/post/18998396482/is-africa-killing-it-in-the-c…</a></p>
+
+<h3 id="-how-to-get-the-most-from-working-at-home-"><a href="/2013/08/23/how-to-get-the-most-from-working-at-work/"> How to get the most from working at home </a></h3>
+
+<p>23 Aug 2013</p>
+
+<blockquote>
+  it’s about having a culture and making sure that it’s understood.
+</blockquote>
+
+<p><a href="http://twitter.com/tafmakura">@tafmakura</a></p>
+
+<p>when discussing about the challenges of telecommuting, being disciplined and making sure one creates an environment they can best work in.</p>
+
+<p>I totally agree.</p>
+
+<h3 id="-success-and-consistency-"><a href="/2013/08/22/success-and-consistency/"> Success and consistency </a></h3>
+
+<p>22 Aug 2013</p>
+
+<p>Consistency is one of the key things young and budding entrepreneurs are never told enough times is fundamental to long-term, enduring success. In a lot of success talk and teachings people tend to concentrate on qualities that CREATE success, such as a strong desire for something, networking, working hard or smarter, etcetera. Based on experience so far, I can confidently say there’s something very close to what’s sometimes called “Beginner’s luck”. The easy-going, free flow of positive events at the start. It’s quite endearing and a lot of aspirants, quite literally, lose it at this early stage. Why that free, easy flow is often classified as success possibly has a lot to do with small, achieavable goals people set at start.</p>
+
+<h3 id="-back-to-old-adventures-"><a href="/2013/07/30/back-to-old-adventures/"> Back to old adventures </a></h3>
+
+<p>30 Jul 2013</p>
+
+<p>Exactly a year ago, at this time, I was offered a job to become a full time web developer at <a href="http://quatrohaus.com">Quatrohaus</a>. Back at the time, I was still finding my feet in web development, a process that is still ongoing, and I felt truly honored that such an opportunity had come my way.</p>
+
+<h3 id="-letting-of-your-passion-"><a href="/2013/04/23/letting-go-of-your-passion/"> Letting of your passion </a></h3>
+
+<p>23 Apr 2013</p>
+
+<p>A couple of weeks ago, I decided to stop many of the habits I had taken up in the past two, three years. That meant a lot of coding, consuming <a href="http://news.ycombinator.com/">entreporn</a> and talking a lot about opportunities we should be exploiting. What triggered this was not that I was feeling burned out, unmotivated or discouraged but I decided to find out what it felt like to live in an inhibited world once again.</p>
+
+<h3 id="-a-letter-to-everyone-from-my-7-year-old-niece-"><a href="/2013/03/20/a-letter-to-everyone-from-my-7-year-old-niece/"> A letter to everyone from my 7 year old niece </a></h3>
+
+<p>20 Mar 2013</p>
+
+<p>This little letter was written by my niece, Ruva when she was over for the holiday last year. She’s 7 years old and learns at <a href="http://www.phoenixschoolmalawi.com/">Phoenix Primary School</a> in Malawi. After bugging me to write something to her parents, I decided to let her write a letter I promised to post on my blog.</p>
+
+<p>Copied below is what she had to say:</p>
+
+<h3 id="-great-startup-podcasts-to-listen-to-"><a href="/2013/03/17/startup-podcasts-to-listen-to/"> Great startup podcasts to listen to </a></h3>
+
+<p>17 Mar 2013</p>
+
+<p>I have recently become an avid podcast collector over the past month or so and I’m clearly enjoying it. Long before downloading podcasts was even considered normal consumption of internet bandwidth, many of my mates were onto downloading a ton of them, daily. I remember just how odd that struck me and I couldn’t figure their line of thinking whether they thought the internet would be shut down one day and they’d regret missed opportunities or they were seriously putting them to good use. To this day, i’m more clueless than I was then, having downloaded a few now, I can tell you, consuming them is the hardest part.</p>
+
+<h3 id="-what-happened-at-cultureshift-"><a href="/2013/03/16/what-happened-at-cultureshit/"> What happened at Cultureshift </a></h3>
+
+<p>16 Mar 2013</p>
+
+<p>It’s a few days after the two week <a href="http://creativeconomy.britishcouncil.org/creative-entrepreneurship/culture-shift/">Culture Shift</a> ideation and hackathon hosted by the British Council, <a href="http://www.jumpstart.co.zw/">Jumpstart</a> and <a href="http://www.culturecode.co.uk/">Culture Code (UK)</a> and for most of us, we are still basking in the afterglow. It was a wonderful event hosted to help local artists mingle with the techies and try to hack together some real solutions to their problems.</p>
+
+<h3 id="-living-with-less-"><a href="/2013/02/26/living-with-less/"> Living with less </a></h3>
+
+<p>26 Feb 2013</p>
+
+<p>Any talk of perfection is often linked to <a href="http://www.becomingminimalist.com/">minimalism</a>.</p>
+
+<p>Growing up and learning about design, I was advised to know when something is both nice and useful when “when there is nothing more to remove”. That became the mark of near-perfection to me. As a result I have tried to abide by this rule when going about design and writing. This decision has come to haunt me on several occasions with comments centering on the work appearing “bland”, not exciting, very quiet and such. So maybe sometimes I personally have taken it too far? A big possibility given i’m not much of a designer but minimalism doesn’t just stop at design.</p>
+
+<h3 id="-zimbabwe-technology-2012-an-outlook-"><a href="/2013/02/01/zimbabwe-technology-an-outlook/"> Zimbabwe technology 2012, an outlook </a></h3>
+
+<p>01 Feb 2013</p>
+
+<p>It’s a new year(!) and we all know what to expect, bigger things! 2011 was nothing but brilliant and I am 100% sure 2012 will be just as fruitful!</p>
+
+:ET
