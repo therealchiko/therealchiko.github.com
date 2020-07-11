@@ -7,9 +7,6 @@ tags: work freelance hiatus code os onesheep
 
 This is a post that I didn't foresee myself writing for the last 3 or 4 years. It is amazing how long but short that time has been. Every day was always so fresh and full of promise, all because of the wonderful folks I was working with. I remember it like yesterday when I got the offer to become a full time contractor at [OneSheep](https://onesheep.org). Having been a Drupal contractor 2 years prior, I jumped at the chance to work on some awesome (and very diverse projects) and what a whirlwind it's been with so many great memories made!
 
-<img src='https://lh3.googleusercontent.com/tFh3qRi0vUq-fo-EhlloexK3H2wlHK0sahIhws4RySKTenSI-pixtn6VKiuu0PoiTkFEinw-bgt9OSe2_CjZc-03q1VFPY22ODgbs0dtqZAoGk5k316RqaQBbcR5AXcIKP3F0asPBR8=w2400' />
-A picture taken during Sheepcon 2019, in Cape Town.
-
 <!--more-->
 
 I tell a lot of people that you know you are living your best life, and doing what you love when work is _not_ work. I woke up every day looking forward to what I would be working on for the past 3 years. But to say it was all hunky-dory would be a lie as well, there were days when I was stuck on some technical challenges and didn't sleep at all, but I always found great leadership steering me towards the best solutions.
