@@ -1,4 +1,4 @@
-I"$8<ul class="tags">
+I""><ul class="tags">
 
   
   
@@ -58,7 +58,7 @@
 
   
   
-  <li>coding has 3 posts</li>
+  <li>coding has 4 posts</li>
 
   
   
@@ -163,6 +163,26 @@
   
   
   <li>dedication has 1 posts</li>
+
+  
+  
+  <li>aws has 1 posts</li>
+
+  
+  
+  <li>devops has 1 posts</li>
+
+  
+  
+  <li>exams has 1 posts</li>
+
+  
+  
+  <li>reading has 1 posts</li>
+
+  
+  
+  <li>smartnotes has 1 posts</li>
 
 </ul>
 
@@ -476,6 +496,13 @@
 
 <p>coding</p>
 <ul>
+
+  
+  <li>
+    <a href="/2021/02/01/how-i-passed-aws-developer-associate-certification/">How I passed AWS Developer Associate certification</a>
+    <span class="date">February 1, 2021</span>
+  </li>
+  
 
   
   <li>
@@ -884,6 +911,66 @@
   <li>
     <a href="/2019/12/26/seriousness/">Seriousness</a>
     <span class="date">December 26, 2019</span>
+  </li>
+  
+
+</ul>
+
+<p>aws</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/02/01/how-i-passed-aws-developer-associate-certification/">How I passed AWS Developer Associate certification</a>
+    <span class="date">February 1, 2021</span>
+  </li>
+  
+
+</ul>
+
+<p>devops</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/02/01/how-i-passed-aws-developer-associate-certification/">How I passed AWS Developer Associate certification</a>
+    <span class="date">February 1, 2021</span>
+  </li>
+  
+
+</ul>
+
+<p>exams</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/02/01/how-i-passed-aws-developer-associate-certification/">How I passed AWS Developer Associate certification</a>
+    <span class="date">February 1, 2021</span>
+  </li>
+  
+
+</ul>
+
+<p>reading</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/02/01/how-i-passed-aws-developer-associate-certification/">How I passed AWS Developer Associate certification</a>
+    <span class="date">February 1, 2021</span>
+  </li>
+  
+
+</ul>
+
+<p>smartnotes</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/02/01/how-i-passed-aws-developer-associate-certification/">How I passed AWS Developer Associate certification</a>
+    <span class="date">February 1, 2021</span>
   </li>
   
 
