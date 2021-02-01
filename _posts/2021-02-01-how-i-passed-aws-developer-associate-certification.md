@@ -11,7 +11,7 @@ I have always been interested in Devops, tinkering with servers, writing some ba
 
 ## Step One: Have a goal
 
-This is almost a platitude but without a goal sometimes it's difficult to muster the grit needle to move the needed. When I decided to write my certification, I started off by paying for the exam fee, which effectively means I chose a date and made a solid commitment. In my case, I decided to give myself one month to study. Looking back, I do not think one month was realistic a period even though I had been somewhat exposed to how things work server side from Docker to EC2, S3, etc.
+This is almost a platitude but without a goal sometimes it's difficult to muster the grit needed to move the needle. When I decided to write my certification, I started off by paying for the exam fee, which effectively means I chose a date and made a solid commitment. In my case, I decided to give myself one month to study. Looking back, I do not think one month was realistic a period even though I had been somewhat exposed to how things work server side from Docker to EC2, S3, etc.
 
 ## Step Two: Have a plan and solid habits
 
