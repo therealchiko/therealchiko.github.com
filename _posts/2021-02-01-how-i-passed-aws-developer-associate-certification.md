@@ -33,7 +33,7 @@ With the festive holiday looming, I decided to give it yet another go as I could
 
 ## Step Five: Dive in, head first
 
-After going through my Udemy course for the second time, I decided to take mock exams on Tutorials Dojo and I gave myself one week to for "free learning" which included reading whitepapers, related work and doing any labs that tickled my fancy to make some concepts stick. On Tutorials Dojo I started scoring very low: 51.85% (in my first attempt), 65% in my second but I stuck at it until I was consistently scoring in the 80s and 90s. What makes Tutorial Dojo so fantastic are the different ways of studying it offers, from timed tests, review mode to section based material, I was able to spot my weaknesses and zone in on them.
+After going through my Udemy course for the second time, I decided to take mock exams on Tutorials Dojo and I gave myself one week for "free learning" which included reading whitepapers, related work and doing any labs that tickled my fancy to make some concepts stick. On Tutorials Dojo I started scoring very low: 51.85% (in my first attempt), 65% in my second but I stuck at it until I was consistently scoring in the 80s and 90s. What makes Tutorial Dojo so fantastic are the different ways of studying it offers, from timed tests, review mode to section based material, I was able to spot my weaknesses and zone in on them.
 
 ## Pass
 
