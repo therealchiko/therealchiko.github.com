@@ -5,13 +5,13 @@ description: ""
 tags: aws devops coding exams reading smartnotes
 ---
 
-I have always been interested in Devops, tinkering with servers, writing some bash scripts and always grabbed the chance to get my hands dirty in server side stuff. Despite my interest, I hadn't dug deeper into cloud computing to get a full picture of how everything comes together and that irked me at the back of my mind. In the course of building a side project, I decided to give serverless architecture a real go and discovered I wasn't knowledgeable to a level of comfort so I decided to get a better understanding of AWS services. After finishing the course, I am so glad I took it and will share my learnings in future blog posts as I document the making of my new sideproject, nroute (more on that later). For now let's discuss how I planned and passed it.
+I have always been interested in Devops, tinkering with servers, writing some bash scripts and always grabbed the chance to get my hands dirty in server side stuff. Despite my interest, I hadn't dug deeper into cloud computing to get a full picture of how everything comes together and that irked me. In the course of building a side project and giving serverless architecture a real go I discovered I wasn't knowledgeable to a level of comfort so I decided to get a better understanding of AWS. After finishing the course, I am so glad I took it and will share my learnings in future blog posts as I document the making of my new sideproject, nroute (more on that later). For now let's discuss how I planned and passed it.
 
 <!--more-->
 
 ## Step One: Have a goal
 
-This is almost a platitude but without a goal sometimes it's difficult to muster the grit needed to move the needed. When I decided to write my certification, I started off by paying for the exam fee, which effectively means I chose a date and made a solid commitment. In my case, I decided to give myself one month to study. Looking back, I do not think one month was realistic a period even though I had been somewhat exposed to how things work server side from Docker to EC2, S3, etc.
+This is almost a platitude but without a goal sometimes it's difficult to muster the grit needle to move the needed. When I decided to write my certification, I started off by paying for the exam fee, which effectively means I chose a date and made a solid commitment. In my case, I decided to give myself one month to study. Looking back, I do not think one month was realistic a period even though I had been somewhat exposed to how things work server side from Docker to EC2, S3, etc.
 
 ## Step Two: Have a plan and solid habits
 
