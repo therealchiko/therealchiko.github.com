@@ -32,7 +32,7 @@
  */
 
 html {
-  font-family: 'Antic Slab', serif;
+  font-family: 'Sen', sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -79,7 +79,6 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: 'Patua One','Pacifico',"Carter One",Hind, "Abril Fatface", serif;
   font-size: 2.5rem;
 }
 
