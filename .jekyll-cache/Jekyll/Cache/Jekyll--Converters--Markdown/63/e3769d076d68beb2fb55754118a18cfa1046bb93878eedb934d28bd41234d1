@@ -1,4 +1,4 @@
-I"#<p>Often times when creating custom modules for Drupal, we get confronted with the problem of setting friendly but useful breadcrumbs. The contribution a clearly set breadcrumb can make on a page can never be understated, it guides the user on where they’re coming from and currently are.<br />
+I"<p>Often times when creating custom modules for Drupal, we get confronted with the problem of setting friendly but useful breadcrumbs. The contribution a clearly set breadcrumb can make on a page can never be understated, it guides the user on where they’re coming from and currently are.<br />
 <!--more-->
 <em>This post assumes you already know how to write a module for drupal and you’re pretty familiar with the drupal way of coding.</em></p>
 
@@ -10,10 +10,10 @@
 
 <p>The following module is a super simple module to illustrate the concept, lets call it newcrumbs. Here’s our .info file:</p>
 
-<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">name</span> <span class="o">=</span> <span class="nx">newcrumbs</span>
-<span class="nx">description</span> <span class="o">=</span><span class="nx">Custom</span> <span class="nx">module</span> <span class="nx">that</span> <span class="nx">uses</span> <span class="nx">a</span> <span class="nx">breadcrumb</span> <span class="nx">API</span>
-<span class="nx">core</span> <span class="o">=</span><span class="mf">6.</span><span class="nx">x</span>
-<span class="nx">package</span><span class="o">=</span><span class="nx">Other</span>
+<div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">name</span> <span class="o">=</span> <span class="n">newcrumbs</span>
+<span class="n">description</span> <span class="o">=</span><span class="nc">Custom</span> <span class="n">module</span> <span class="n">that</span> <span class="n">uses</span> <span class="n">a</span> <span class="n">breadcrumb</span> <span class="no">API</span>
+<span class="n">core</span> <span class="o">=</span><span class="mf">6.</span><span class="n">x</span>
+<span class="n">package</span><span class="o">=</span><span class="nc">Other</span>
 </code></pre></div></div>
 <p>Now that we are done declaring our module, let’s dive into code.</p>
 
@@ -24,13 +24,13 @@
   * Implementation of hook_menu()
   */</span>
  <span class="err"> </span>
-<span class="k">function</span> <span class="nf">newcrumbs_menu</span><span class="p">(){</span>
+<span class="k">function</span> <span class="n">newcrumbs_menu</span><span class="p">(){</span>
  <span class="nv">$items</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
  <span class="nv">$items</span><span class="p">[</span><span class="s1">'tealist'</span><span class="p">]</span><span class="o">=</span> <span class="k">array</span> <span class="p">(</span>
-    <span class="s1">'title'</span><span class="o">=</span> <span class="nx">t</span><span class="p">(</span><span class="s1">'A listing of different kinds of tea'</span><span class="p">),</span>
+    <span class="s1">'title'</span><span class="o">=</span> <span class="nf">t</span><span class="p">(</span><span class="s1">'A listing of different kinds of tea'</span><span class="p">),</span>
     <span class="s1">'page callback'</span><span class="o">=</span> <span class="s1">'displaytea_list'</span><span class="p">,</span>
     <span class="s1">'access arguments'</span><span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">'administer content'</span><span class="p">),</span>
-    <span class="s1">'type'</span><span class="o">=</span> <span class="nx">MENU_CALLBACK</span><span class="p">,</span>
+    <span class="s1">'type'</span><span class="o">=</span> <span class="no">MENU_CALLBACK</span><span class="p">,</span>
  <span class="p">);</span>
  <span class="err"> </span>
  <span class="k">return</span> <span class="nv">$items</span><span class="p">;</span>
@@ -40,10 +40,10 @@
 <p>Now for the callback that will be called on our newly created page.</p>
 
 <div class="language-php highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="k">function</span> <span class="nf">displaytea_list</span><span class="p">(){</span>
+<span class="k">function</span> <span class="n">displaytea_list</span><span class="p">(){</span>
  <span class="c1">//let's define a breadcrumb for the page here</span>
  <span class="nv">$breadcrumb</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
- <span class="nx">drupal_alter</span><span class="p">(</span><span class="s1">'breadcrumb'</span><span class="p">,</span> <span class="nv">$breadcrumb</span><span class="p">,</span><span class="s1">'newcrumbs_call'</span><span class="p">);</span>
+ <span class="nf">drupal_alter</span><span class="p">(</span><span class="s1">'breadcrumb'</span><span class="p">,</span> <span class="nv">$breadcrumb</span><span class="p">,</span><span class="s1">'newcrumbs_call'</span><span class="p">);</span>
  <span class="c1">//just before setting it, we invoke the module.</span>
 <span class="p">}</span>
 </code></pre></div></div>

@@ -1,10 +1,10 @@
-I"�<p>I have been enjoying the book Effective Engineer by Edmond Lau. One of the great tricks of becoming more effective is to set workflows that make you do more, much faster. I have ended up setting a few scripts to automate a lot of bash commands such as ssh-ing, using git etcetera and in this short primer i’d love to show total newbies how to have your own executable scripts from any place on your system.</p>
+I"�<p>I have been enjoying the book Effective Engineer by Edmond Lau. One of the great tricks of becoming more effective is to set workflows that make you do more, much faster. I have ended up setting a few scripts to automate a lot of bash commands such as ssh-ing, using git etcetera and in this short primer i’d love to show total newbies how to have your own executable scripts from any place on your system.</p>
 
 <p>The first thing to note here is Mac OS has a few candidate files in your home folder that it indexes for commands to use in every bash window. On my system, I prefer to use ~/.bash_rc mainly because it is loaded up when a new instance of a terminal window is opened compared to ~/.bash_profile which is loaded up at login.
 <!--more-->
 Without further ado, let’s create a small script that will shutdown the laptop when we type:</p>
 
-<p><code class="highlighter-rouge">c.restart</code></p>
+<p><code class="language-plaintext highlighter-rouge">c.restart</code></p>
 
 <h3 id="1st-approach---using-an-alias">1st Approach - using an alias</h3>
 <p>Easiest way to do this is to create an alias for the command you’d normally type in the terminal. Open up your ~/.bashrc and enter the following:</p>
