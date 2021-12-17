@@ -1,4 +1,4 @@
-I"j@<ul class="tags">
+I";B<ul class="tags">
 
   
   
@@ -122,7 +122,7 @@
 
   
   
-  <li>productivity has 1 posts</li>
+  <li>productivity has 2 posts</li>
 
   
   
@@ -195,6 +195,14 @@
   
   
   <li>emberjs has 1 posts</li>
+
+  
+  
+  <li>workspace has 1 posts</li>
+
+  
+  
+  <li>tools has 1 posts</li>
 
 </ul>
 
@@ -780,6 +788,13 @@
 
   
   <li>
+    <a href="/2021/11/21/uses/">uses</a>
+    <span class="date">November 21, 2021</span>
+  </li>
+  
+
+  
+  <li>
     <a href="/2017/04/04/working/">Working time</a>
     <span class="date">April 4, 2017</span>
   </li>
@@ -1019,6 +1034,30 @@
   <li>
     <a href="/2021/09/18/change/">I changed jobs, again!</a>
     <span class="date">September 18, 2021</span>
+  </li>
+  
+
+</ul>
+
+<p>workspace</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/11/21/uses/">uses</a>
+    <span class="date">November 21, 2021</span>
+  </li>
+  
+
+</ul>
+
+<p>tools</p>
+<ul>
+
+  
+  <li>
+    <a href="/2021/11/21/uses/">uses</a>
+    <span class="date">November 21, 2021</span>
   </li>
   
 
