@@ -85,6 +85,8 @@ html {
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
+  border-bottom: 1px solid;
+  padding-bottom: 1em;
 }
 .sidebar-nav-item {
   display: block;

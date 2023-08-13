@@ -10,7 +10,7 @@ permalink: pretty
 # Setup
 title: Chiko Mukwenha
 tagline: "Software Developer"
-description: "I'm a product engineer who's in love with the process of creating great experiences. :)"
+description: "I'm a product engineer who loves creating delightful experiences that abstract complexity."
 url: http://chikomukwenha.co
 baseurl: /
 reading: /reading
@@ -32,4 +32,4 @@ github:
 social:
   twitter: https://twitter.com/therealchiko
 
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate,jekyll-feed]
