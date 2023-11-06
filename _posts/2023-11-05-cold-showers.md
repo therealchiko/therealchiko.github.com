@@ -19,3 +19,5 @@ After the third week, taking the cold shower became second nature, and I was so 
 What I also didn't expect was the ripple effect this would have. It made me quite conscious of my decisions that had anything to do with health. I started eating and sleeping better because, after a morning shower, I was pretty productive at work, which created more time for other things like gym, writing and reading.
 <br /><br />
 In conclusion, take a cold shower now and then! I'm super curious to know how you will find the experience!
+<br><br>
+<strong>Follow me on X / Twitter <a href="https://twitter.com/therealchiko">@therealchiko</a> for more content!</strong>
