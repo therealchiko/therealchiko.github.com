@@ -5,6 +5,7 @@ description: ""
 tags: []
 ---
 # Do work with people you respect
-One of my key lessons this year has been learning to work with a team. Before the work, comes the team building part, picking the group. One of my now-big key metric is to pick people based on eccentricism. Let me explain. I think in relationships of any nature, respect plays a crucial role in maintaining goodwill, more so, when there’s substantial possibility for healthy conflict and risk taking. Members of a team who share the same key philosophies (better yet if it’s a vision for the future), make collaboration easier even when there is no consensus on the next steps. A shared, unique view of the world offers excitement and is an anchor for experimentation because of the strong sense of belonging. 
 
-When the shared belief and values start to diverge, consider your options afresh.
+One of my key lessons this year has been learning to create and work with a team. When building a team, one of my key metrics now is to select people based on their unique, even eccentric, perspectives. In relationships, respect is crucial for maintaining goodwill, especially when there’s substantial room for healthy conflict and risk-taking. Team members who share key philosophies—or even a quirky, forward-thinking vision—make collaboration easier, even in the absence of consensus. When you agree on the big picture, it’s easier to trust each other’s differing approaches to getting there, making every step of the journey an exercise in negotiation.
+
+When shared beliefs and values begin to diverge, it’s worth considering your options with fresh eyes.
