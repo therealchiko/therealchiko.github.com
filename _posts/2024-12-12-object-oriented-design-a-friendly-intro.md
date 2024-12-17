@@ -6,7 +6,7 @@ tags: []
 ---
 One of the ways I prefer to build applications is by using Object Oriented programming. In a recent video, I went into the tech I currently use on the backend and front, and most of it is, of course, heavily influenced by what it allows me to do. In this post I want to offer a quick glimpse into what Object oriented actually means, using PHP for demonstration purposes.
 
-Programming languages have what we call primitives which in a sense, are the natural or first-class citizens of that language. This about it as you, being the citizen of your native country. You belong there and this is usually apparent because you speak the native language of the land, have ID documents for that country, etc. In a language like PHP, native citizens are things like booleans, strings, integers, float or double, array, and a very few others. It’s a very limited set. Let’s take a quick look at how these work quickly:
+Programming languages have what we call primitives which in a sense, are the natural or first-class citizens of that language. Think about it as you, being the citizen of your native country. You belong there and this is usually apparent because you speak the native language of the land, have ID documents for that country, etc. In a language like PHP, native citizens are things like booleans, strings, integers, float or double, array, and a very few others. It’s a very limited set. Let’s take a quick look at how these work quickly:
 <!--more--><br ><br >
 ```php
 $name = "Bill";
@@ -46,7 +46,7 @@ So what is a class? Think of it as a container, a blueprint or a map - it descri
 
 ### Using a class
 
-To use this class, we need to create its Object. Objects are created from classes. You can create as many objects from a class as you want, the same way you can defined many variables of a certain type (strings, ints, doubles, etc) as you wish. Digging in further, let’s recreate Person with our new found powers:
+To use this class, we need to create its Object. Objects are created from classes. You can create as many objects from a class as you want, the same way you can define many variables of a certain type (strings, ints, doubles, etc) as you wish. Digging in further, let’s recreate Person with our new found powers:
 
 ```php
 
