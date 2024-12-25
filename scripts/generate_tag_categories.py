@@ -43,6 +43,7 @@ def generate_taxonomy_pages(items, type_name):
     template = """---
 layout: {}
 {}: {}
+title: "{}"
 ---"""
     
     # Create directory if it doesn't exist
@@ -55,7 +56,13 @@ layout: {}
         
         # Create index.html for the item
         with open(item_dir / 'index.html', 'w', encoding='utf-8') as f:
-            f.write(template.format(type_name, type_name.rstrip('s'), item))
+            # Add proper frontmatter including title
+            f.write(template.format(
+                type_name,
+                type_name.rstrip('s'),  # 'category' or 'tag'
+                item,
+                f"Posts in {type_name} '{item}'"  # title
+            ))
         
         print(f"Generated page for {type_name.rstrip('s')}: {item}")
 

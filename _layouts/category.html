@@ -4,16 +4,19 @@ layout: default
 
 <div class="category-page">
   <header class="category-header">
-    <h1 class="category-title">{{ page.category }}</h1>
+    {% assign current_category = page.category %}
+    <h1 class="category-title">{{ current_category }}</h1>
     <p class="category-description">
-      Posts in category "{{ page.category }}" ({{
-      site.categories[page.category].size }} posts)
+      Posts in category "{{ current_category }}" {% if
+      site.categories[current_category] %} ({{
+      site.categories[current_category].size }} posts) {% else %} (0 posts) {%
+      endif %}
     </p>
   </header>
 
   <div class="posts-grid">
-    {% if site.categories[page.category] %} {% assign category_posts =
-    site.categories[page.category] | sort: 'date' | reverse %} {% for post in
+    {% if site.categories[current_category] %} {% assign category_posts =
+    site.categories[current_category] | sort: 'date' | reverse %} {% for post in
     category_posts %}
     <article class="post-card">
       <div class="post-meta">
