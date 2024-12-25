@@ -41,7 +41,7 @@ title: Home
       {% endfor %}
     </div>
 
-    <a href="/category/{{ cat_name | slugify }}" class="category-link">
+    <a href="/category/{{ cat_name | downcase }}/" class="category-link">
       View all posts in {{ cat_name }} →
     </a>
   </section>

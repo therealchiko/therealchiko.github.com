@@ -4,7 +4,7 @@ highlighter: rouge
 extensions: [fenced_code_blocks]
 
 # Permalinks
-permalink: pretty
+permalink: /:categories/:title/
 #relative_permalinks: tru
 
 # Setup
@@ -33,3 +33,10 @@ social:
   twitter: https://twitter.com/therealchiko
 
 plugins: [jekyll-paginate,jekyll-feed]
+
+defaults:
+  -
+    scope:
+      path: "category"
+    values:
+      layout: "category"
