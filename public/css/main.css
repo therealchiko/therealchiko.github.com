@@ -758,3 +758,109 @@ body {
   font-weight: 500;
   line-height: 1.4;
 }
+
+/* Newsletter Section */
+.newsletter-section {
+  width: 90%;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.newsletter-content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.newsletter-icon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 1.5rem;
+  color: #ac4142;
+  opacity: 0.9;
+}
+
+.newsletter-section h3 {
+  font-size: 1.5rem;
+  color: #2d2d2d;
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+}
+
+.newsletter-section p {
+  color: #666;
+  font-size: 1rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-form input[type="email"] {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #2d2d2d;
+  background: #f8f9fa;
+  transition: all 0.2s ease;
+}
+
+.newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: #ac4142;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(172, 65, 66, 0.1);
+}
+
+.newsletter-form button {
+  padding: 0.75rem 1.5rem;
+  background: #ac4142;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  background: #bf4445;
+  transform: translateY(-1px);
+}
+
+.form-note {
+  font-size: 0.85rem !important;
+  color: #666 !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .newsletter-section {
+    padding: 2rem 1.5rem;
+    margin: 3rem 0;
+  }
+  
+  .form-group {
+    flex-direction: column;
+  }
+  
+  .newsletter-form button {
+    width: 100%;
+  }
+}
