@@ -2,31 +2,83 @@
 layout: default
 ---
 
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
-   {{ content }}
-</div>
+<article class="post">
+  <header class="post-header">
+    <div class="post-meta">
+      <time class="post-date">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% if page.tags.size > 0 %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <a href="/tag/{{ tag | slugify }}/" class="tag">#{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
 
-<h5> Tags </h5>
-<ul class="tags">
-  {% for tag in page.tags %}
-  <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
-  {% endfor %}
-</ul>
+    <h1 class="post-title">{{ page.title }}</h1>
 
-<div class="comments">
-  <div id="disqus_thread"></div>
-  <script>
-    (function() { // DON'T EDIT BELOW THIS LINE
-      var d = document, s = d.createElement('script');
+    {% if page.subtitle %}
+    <p class="post-subtitle">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
 
-      s.src = '//chikomukwenhaco.disqus.com/embed.js';
+  <div class="post-content">{{ content }}</div>
 
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</div>
+  <footer class="post-footer">
+    <div class="author-bio">
+      <img
+        src="/assets/images/avatar.jpg"
+        alt="Chiko Mukwenha"
+        class="author-avatar"
+      />
+      <div class="author-info">
+        <h3>Written by Chiko Mukwenha</h3>
+        <p>
+          I write about software engineering, building products, and lessons
+          learned along the way.
+        </p>
+        <div class="author-links">
+          <a href="https://x.com/therealchiko" target="_blank" rel="noopener"
+            >X</a
+          >
+          <a
+            href="https://github.com/therealchiko"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </div>
 
+    <div class="post-newsletter">
+      <h3>Subscribe to my newsletter</h3>
+      <p>
+        Get notified when I publish new posts about software engineering and
+        building products.
+      </p>
+      <form
+        action="https://chikomukwenha.us21.list-manage.com/subscribe/post?u=95180503d6cba3c99ebfc4089&amp;id=ce025adb0d&amp;f_id=00cb5ce1f0"
+        method="post"
+        class="newsletter-form"
+        target="_blank"
+      >
+        <input
+          type="email"
+          name="EMAIL"
+          required
+          placeholder="Your email address"
+        />
+        <button type="submit">Subscribe</button>
+        <div style="position: absolute; left: -5000px" aria-hidden="true">
+          <input
+            type="text"
+            name="b_95180503d6cba3c99ebfc4089_ce025adb0d"
+            tabindex="-1"
+            value=""
+          />
+        </div>
+      </form>
+    </div>
+  </footer>
+</article>
