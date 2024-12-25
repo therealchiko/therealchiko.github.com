@@ -2,7 +2,8 @@
 layout: post
 title: "Leaving awesome OneSheep"
 description: ""
-tags: work freelance hiatus code os onesheep
+tags: [career-transition, software-engineering, team-culture, professional-growth, christian-tech]
+categories: ["Success"]
 ---
 
 This is a post that I didn't foresee myself writing for the last 3 or 4 years. It is amazing how long but short that time has been. Every day was always so fresh and full of promise, all because of the wonderful folks I was working with. I remember it like yesterday when I got the offer to become a full time contractor at [OneSheep](https://onesheep.org). Having been a Drupal contractor 2 years prior, I jumped at the chance to work on some awesome (and very diverse projects) and what a whirlwind it's been with so many great memories made!

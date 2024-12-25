@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "2016 review and what's next"
-tags: 2016 goals planning programming c# php javascript travel
+tags: [year-review, goal-setting, career-planning, personal-growth, web-development]
+categories: ["Success"]
 ---
 I almost always set goals for the year. In 2016 I had a bunch of goals and I think it's fair to say I achieved about 50% of them, which has me beaming! I came to the comforting conclusion about two years ago that I'm in a marathon and my prophetic powers being what they're (non-existant), estimating time is tough but I sure as hell have an idea about my direction. With that out of the way, here's how my 2016 turned out to be:
 

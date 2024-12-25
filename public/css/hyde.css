@@ -85,7 +85,7 @@ html {
 /* Sidebar nav */
 .sidebar-nav {
   margin-bottom: 1rem;
-  border-bottom: 1px solid;
+  margin-top: 1rem;
   padding-bottom: 1em;
 }
 .sidebar-nav-item {
@@ -110,8 +110,8 @@ a.sidebar-nav-item:focus {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
-    bottom: 1rem;
     left:   1rem;
+    min-height: 100%;
   }
 }
 

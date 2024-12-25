@@ -1,7 +1,8 @@
 ---
 title: Zimbabwe technology 2012, an outlook
 layout: post
-tags: tech startups 
+tags: [tech-industry, zimbabwe, entrepreneurship, web-development, africa-tech]
+categories: ["Startups"]
 ---
 
 It's a new year(!) and we all know what to expect, bigger things! 2011 was nothing but brilliant and I am 100% sure 2012 will be just as fruitful!

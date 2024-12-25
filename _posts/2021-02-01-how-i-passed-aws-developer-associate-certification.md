@@ -2,7 +2,8 @@
 layout: post
 title: "How I passed AWS Developer Associate certification"
 description: ""
-tags: aws devops coding exams reading smartnotes
+tags: [aws, cloud-computing, certification, devops, professional-development, study-tips]
+categories: ["Programming"]
 ---
 
 I have always been interested in Devops, tinkering with servers, writing some bash scripts and always grabbed the chance to get my hands dirty in server side stuff. Despite my interest, I hadn't dug deeper into cloud computing to get a full picture of how everything comes together and that irked me. In the course of building a side project and giving serverless architecture a real go I discovered I wasn't knowledgeable to a level of comfort so I decided to get a better understanding of AWS. After finishing the course, I am so glad I took it and will share my learnings in future blog posts as I document the making of my new sideproject, nroute (more on that later). For now let's discuss how I planned and passed it.

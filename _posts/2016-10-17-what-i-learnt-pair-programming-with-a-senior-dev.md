@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "What I learnt pair programming with a senior dev"
-tags: learning c# xamarin agile
+tags: [pair-programming, mentorship, learning, xamarin, professional-growth]
+categories: ["Programming"]
 ---
 A couple of weeks ago, I had the pleasure to travel for some pair programming with a senior developer in our team who lives in Cape Town. This being our first meeting, I was really excited to finally meet the guy we all joke is a bot (internal joke). During my time in Strand (quiet city in Cape Town), I learnt some things I'd like to share here. These things became more apparent **after** our sessions and I think they should be considered huge benefits of pairing with someone more senior.
 <!--more-->

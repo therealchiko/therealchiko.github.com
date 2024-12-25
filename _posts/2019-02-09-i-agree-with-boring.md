@@ -2,7 +2,8 @@
 layout: post
 title: "i agree with boring"
 description: ""
-tags: []
+tags: [software-development, best-practices, code-quality, simplicity, technical-debt]
+categories: ["Programming"]
 ---
 I couldn't help but nod my head the entire length of the blog post written by Jeremy Wagner on [make it boring](https://jeremy.codes/blog/make-it-boring/). It's not often that I find someone literally following my train of thought so succinctly, albeit from their own unique angle. The principle behind the post is that boring things are the big stones to be put in first.
 

@@ -2,7 +2,8 @@
 layout: post
 title: "Doing work: team"
 description: ""
-tags: work team success
+tags: [leadership, team-building, management, workplace-culture]
+categories: ["Success"]
 ---
 
 __[This is part of a leadership series where I share small snippets about team building and success]__

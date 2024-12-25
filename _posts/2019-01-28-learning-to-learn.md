@@ -2,7 +2,8 @@
 layout: post
 title: "Learning to learn"
 description: ""
-tags: work learning goals
+tags: [learning-techniques, personal-development, productivity, cognitive-science, skill-acquisition]
+categories: ["Success"]
 ---
 
 When was the last time you thought about how you should be learning? Like many, I realized I went through formal education immersed in different kinds of learning methods but remained oblivious to reasons for using them. This has always bothered me because I enjoy learning, a lot and quickening the speed of it whilst reaping all the benefits, is the ultimate goal. With that motive in mind, I decided to enroll in the free course: [Learning to learn](https://www.coursera.org/learn/learning-how-to-learn) by Terrence Sejnowski and Barbara Oakley on Coursera. This blog post will outline some of the insights I have found helpful.

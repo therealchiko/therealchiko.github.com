@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Guide to securing Joomla v1.5 sites
-tags: Joomla
+tags: [joomla, security, web-development, cms, best-practices]
+categories: ["Programming"]
 ---
 
 My Linux installation crashed this morning which got me thinking so much about doing regular backups and making sure everything is secure. It's been a weird week really, one of my mates got his website hacked too so I've had to think a lot on web security as well. I'm a Drupaler and he was running Joomla!, the CMS I dabbled in when I got started into web development. I hope to show you some of the cool things one can do to secure a Joomla! Site, with hacktivists on the prowl now more than ever (for better or worse) it helps to take measures against seeing the photo my friend woke up to find .

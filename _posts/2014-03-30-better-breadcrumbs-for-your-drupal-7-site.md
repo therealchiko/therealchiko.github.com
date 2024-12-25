@@ -1,7 +1,8 @@
 ---
 title: Better breadcrumbs for your Drupal 7 site
-tags: drupal php coding
+tags: [drupal, php, web-development, cms, navigation]
 layout: post
+categories: ["Programming"]
 ---
 Often times when creating custom modules for Drupal, we get confronted with the problem of setting friendly but useful breadcrumbs. The contribution a clearly set breadcrumb can make on a page can never be understated, it guides the user on where they're coming from and currently are.  
 <!--more-->

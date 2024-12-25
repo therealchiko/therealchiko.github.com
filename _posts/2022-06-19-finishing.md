@@ -2,7 +2,8 @@
 layout: post
 title: "Finishing"
 description: ""
-tags: productivity life success
+tags: [productivity, habits, discipline, goal-setting, execution]
+categories: ["Success"]
 ---
 I want to share an observation that I made and have wanted to put into words for a while. A lot of times we talk about starting something, going for our dreams, never quitting or (eventually) quitting without paying attention to the process of executing. I think in-between start and result, process is something that needs a lot of thought, especially the means to create a long streak of consistent results or action.
 <!--more--><br ><br >

@@ -1,7 +1,8 @@
 ---
 title: Connecting Dots
-tags: learning life
+tags: [learning, life-lessons, reflection, pattern-recognition, personal-development]
 layout: post
+categories: ["Success"]
 ---
 In his famous Stanford commencement address, Steve Jobs said something about connecting the dots and how you can only do that after the fact. The first time I heard that, it didn’t shake my thinking; actually I dismissed it offhandedly without putting much thought into it. Not that I didn’t think it wasn’t true nor profound but like most things in life, hands-on experience is often more hard hitting than simple, verbal advice.
 <!--more-->

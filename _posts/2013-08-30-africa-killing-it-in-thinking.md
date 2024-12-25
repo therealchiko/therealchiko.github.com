@@ -1,7 +1,8 @@
 ---
 title: Africa is killing it in thinking
-tags: learning education
+tags: [education, africa, innovation, critical-thinking, tech-education]
 layout: post
+categories: ["Success"]
 ---
 
 Disclaimer: this is in response to a post written by Sam Chipangura on his blog here:  

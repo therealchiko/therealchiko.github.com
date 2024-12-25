@@ -1,7 +1,8 @@
 ---
 title: Removing all-day label from Drupal calendar module
-tags: drupal coding php
+tags: [drupal, php, calendar-module, web-development, customization]
 layout: post
+categories: ["Programming"]
 ---
 
 If you're new to Drupal, let me tell you something, the [Date](http://drupal.org/project/date) module is a must-install! It comes with some awesome functionality and a date API that enables you to add date fields to different content types, even entities in Drupal 7! 

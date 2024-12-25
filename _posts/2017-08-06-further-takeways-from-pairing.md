@@ -2,7 +2,8 @@
 layout: post
 title: "Recent takeaways from pairing"
 description: ""
-tags: pairing coding vuejs learning
+tags: [pair-programming, vuejs, collaboration, learning-process, team-practices]
+categories: ["Programming"]
 ---
 A couple of weeks ago, my workmate paid a visit to Harare from his place in Cape Town for some pair programming, again (yay!). After having had a head start in coding a web app for a mobile application (built with Xamarin), the objective was to quickly knock it into shape and ship it out. I had chosen VueJS for the frontend (because it’s awesome), supported by an API in Laravel - to maintain consistency with the mobile app, we wanted everything to remain exactly the same. During the time of pairing, I learned even more lessons than the other times when I have paired with other programmers.
 <!--more-->

@@ -2,7 +2,8 @@
 layout: post
 title: "Cold showers"
 description: ""
-tags: []
+tags: [wellness, habits, personal-development, morning-routine]
+categories: ["Success"]
 ---
 
 During October, I decided to run a random experiment and stick to taking nothing but cold showers, regardless of the weather. Why would anyone do this? The idea was shared with me by my brother, who went through a month-long experience of taking showers at 5 a.m. at the advice of his therapist. I was intrigued by this (I love body hacking and will try most things at least once!) so I decided to challenge myself to see if there was any merit. It also just boiled down to challenging myself to get outside my comfort zone and see if I could improve my performance and health by living differently! My findings:

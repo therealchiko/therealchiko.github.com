@@ -1,7 +1,8 @@
 ---
-title : A letter to everyone from my 7 year old niece
+title: A letter to everyone from my 7 year old niece
 layout: post
-tags: environment random
+tags: [environment, youth-perspective, recycling, personal-stories]
+categories: ["Success"]
 ---
 
 This little letter was written by my niece, Ruva when she was over for the holiday last year. She's 7 years old and learns at [Phoenix Primary School](http://www.phoenixschoolmalawi.com/) in Malawi. After bugging me to write something to her parents, I decided to let her write a letter I promised to post on my blog.

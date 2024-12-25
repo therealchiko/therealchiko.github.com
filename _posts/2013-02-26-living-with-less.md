@@ -1,7 +1,8 @@
 ---
 title: Living with less
-tags: living learning
+tags: [minimalism, lifestyle, personal-development, mindfulness, simplicity]
 layout: post
+categories: ["Success"]
 ---
 
 Any talk of perfection is often linked to [minimalism](http://www.becomingminimalist.com/).

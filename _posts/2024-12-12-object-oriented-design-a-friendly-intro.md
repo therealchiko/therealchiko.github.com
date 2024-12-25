@@ -3,6 +3,7 @@ layout: post
 title: "Object Oriented design, a friendly intro"
 description: ""
 tags: []
+categories: ["Programming"]
 ---
 One of the ways I prefer to build applications is by using Object Oriented programming. In a recent video, I went into the tech I currently use on the backend and front, and most of it is, of course, heavily influenced by what it allows me to do. In this post I want to offer a quick glimpse into what Object oriented actually means, using PHP for demonstration purposes.
 

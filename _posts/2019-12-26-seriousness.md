@@ -2,7 +2,8 @@
 layout: post
 title: "Seriousness"
 description: ""
-tags: work focus dedication
+tags: [work-ethic, focus, dedication, success-mindset, personal-excellence]
+categories: ["Success"]
 ---
 
 I am a huge Arsenal supporter. I started loving the club because they wore a shade of red I liked when I was young. As the years rolled by with Arsene Wenger as coach, I got to like his approach and method of putting the club's values first, before victories. Arsenal was one of the clubs that could lose beautifully which would leave a conflict of emotions in supporters after a game, yes points would have been lost but you would also recall special, magical moments created on the field which would make you overlook the final result. Since Wenger left though, the club has been in a bit of a tailspin. Unai Emery who took over about 2 years ago failed to win the fans over because of an unattractive style of play and few victories which eventually culminated in his sacking. In his place, Mikel Arterta, a former captain was put at the the helm. While watching his first video as Arsenal coach the idea of this blog post came about. It was refreshing to hear how clear he was about what it takes for Arsenal to get back to greatness. One theme that I took away, is how serious he approaches his work and the level he requires of everyone who will contribute.

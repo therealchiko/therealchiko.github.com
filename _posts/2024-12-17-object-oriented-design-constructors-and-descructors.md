@@ -3,6 +3,7 @@ layout: post
 title: "Object oriented design: Constructors and descructors"
 description: ""
 tags: []
+categories: ["Programming"]
 ---
 This is a follow up from the first part accessible here: [Object Oriented design, a friendly intro](https://chikomukwenha.co/2024/12/12/object-oriented-design-a-friendly-intro/)
 

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: How to theme Views output Drupal 6/7
-categories: [drupal]
-tags: [views, semantics]
+categories: ["Programming"]
+tags: [drupal, views, theming, web-development, cms]
 ---
 
 I was recently asked by a friend how the output from Views can be themed easily. I'm going to show you an easy way for pure Drupal n00bs to control the look and feel of their website. This tutorial does not require much coding skill, just some CSS knowledge and the ability to use Views is enough.

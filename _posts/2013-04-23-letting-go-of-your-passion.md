@@ -1,7 +1,8 @@
 ---
-title: Letting of your passion
-tags: life learning
+title: Letting go of your passion
+tags: [personal-growth, mindfulness, adaptability, life-lessons, perspective]
 layout: post
+categories: ["Success"]
 ---
 
 A couple of weeks ago, I decided to stop many of the habits I had taken up in the past two, three years. That meant a lot of coding, consuming [entreporn](http://news.ycombinator.com/) and talking a lot about opportunities we should be exploiting. What triggered this was not that I was feeling burned out, unmotivated or discouraged but I decided to find out what it felt like to live in an inhibited world once again.

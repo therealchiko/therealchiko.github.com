@@ -1,7 +1,8 @@
 ---
 title: Success and consistency
-tags: success life learning
+tags: [entrepreneurship, persistence, success-principles, discipline, startup-lessons]
 layout: post
+categories: ["Success"]
 ---
 
 Consistency is one of the key things young and budding entrepreneurs are never told enough times is fundamental to long-term, enduring success. In a lot of success talk and teachings people tend to concentrate on qualities that CREATE success, such as a strong desire for something, networking, working hard or smarter, etcetera. Based on experience so far, I can confidently say there’s something very close to what’s sometimes called “Beginner’s luck”. The easy-going, free flow of positive events at the start. It’s quite endearing and a lot of aspirants, quite literally, lose it at this early stage. Why that free, easy flow is often classified as success possibly has a lot to do with small, achieavable goals people set at start.

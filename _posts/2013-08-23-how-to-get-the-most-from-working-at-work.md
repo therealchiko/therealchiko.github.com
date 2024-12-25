@@ -2,6 +2,7 @@
 title: How to get the most from working at home
 tags: success freelance
 layout: post
+categories: ["Success"]
 ---
 
 >it’s about having a culture and making sure that it’s understood.

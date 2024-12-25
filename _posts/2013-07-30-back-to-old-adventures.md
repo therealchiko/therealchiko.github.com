@@ -1,7 +1,8 @@
 ---
 title: Back to old adventures
-tags: life
+tags: [entrepreneurship, career-change, web-development, freelancing, startup-journey]
 layout: post
+categories: ["Startups"]
 ---
 
 Exactly a year ago, at this time, I was offered a job to become a full time web developer at [Quatrohaus](http://quatrohaus.com). Back at the time, I was still finding my feet in web development, a process that is still ongoing, and I felt truly honored that such an opportunity had come my way.

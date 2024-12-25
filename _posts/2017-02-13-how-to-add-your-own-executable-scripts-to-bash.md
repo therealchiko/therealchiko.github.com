@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "How to add your own executable scripts to bash"
-tags: programming bash unix automation
+tags: [bash, unix, automation, scripting, command-line]
+categories: ["Programming"]
 ---
 I have been enjoying the book Effective Engineer by Edmond Lau. One of the great tricks of becoming more effective is to set workflows that make you do more, much faster. I have ended up setting a few scripts to automate a lot of bash commands such as ssh-ing, using git etcetera and in this short primer i'd love to show total newbies how to have your own executable scripts from any place on your system.
 

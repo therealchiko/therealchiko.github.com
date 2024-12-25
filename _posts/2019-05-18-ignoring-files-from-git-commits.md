@@ -2,7 +2,8 @@
 layout: post
 title: "Ignore changes to specific git files"
 description: "git, code"
-tags: []
+tags: [git, version-control, development-workflow, technical-tips]
+categories: ["Programming"]
 ---
 
 There are times when you are working on something that should not be committed even though it has changed. In this instance, it's not wise to add the changed files to `.gitignore`:
