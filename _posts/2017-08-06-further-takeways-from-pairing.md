@@ -11,7 +11,7 @@ Here are a few of my main takeaways:
 
 ### 1\. Do less
 
-I was constantly reminded of how the best programmers have less to focus on. A change of context, is a huge price to pay. For example, on Jannie’s desktop, he uses it as an actual physical desktop, that means he one has ONE thing on there that he’d be working on! I thought that was genius as sometimes I struggle between juggling different projects. The simple fix here, is really, out of sight - out of mind. As simple as that.
+I was constantly reminded of how the best programmers have less to focus on. A change of context, is a huge price to pay. For example, on Jannie’s desktop, he uses it as an actual physical desktop, that means he one has ONE thing on there that he’d be working on! I thought that was genius as sometimes I struggle between juggling different projects. The simple fix here, is really, out of sight - out of mind. As simple as that!
 
 As a result of this, I simplified my work environment by getting rid of Homestead in preference to Laravel Valet, and quickly hashed out a script that allows one to get and store whatever project you want to work on. You can grab it here: [bash script](https://gist.github.com/therealchiko/a7bdfeb961e18056e3d7986661d0a140)
 
