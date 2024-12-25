@@ -63,4 +63,31 @@
 .tags span {
   color: #666;
   font-size: 0.9rem;
+}
+
+.pagination {
+  text-align: center;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.pagination a {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  color: #007bff;
+  border-radius: 4px;
+}
+
+.pagination a:hover {
+  background: #f8f9fa;
+}
+
+.pagination .current-page {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
 } 
