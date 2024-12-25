@@ -2,11 +2,16 @@
 layout: default
 ---
 
+<!-- Debug Info -->
+{% comment %} Category from page: {{ page.category | inspect }} Available
+categories: {{ site.categories | inspect }} {% endcomment %}
+
 <div class="category-page">
   <header class="category-header">
-    {% assign current_category = page.category %}
+    {% assign current_category = page.category | default: page.title | split:
+    "'" | last | split: " " | first %}
     <h1 class="category-title">{{ current_category }}</h1>
-    <p class="category-description">
+    <p class="tag-description">
       Posts in category "{{ current_category }}" {% if
       site.categories[current_category] %} ({{
       site.categories[current_category].size }} posts) {% else %} (0 posts) {%
