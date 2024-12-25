@@ -12,11 +12,9 @@ layout: default
   </header>
 
   <div class="posts-grid">
-    <!-- Debug information -->
-    <!-- {{ site.categories | inspect }} -->
-
-    {% assign category_posts = site.categories[page.category] | sort: 'date' |
-    reverse %} {% for post in category_posts %}
+    {% if site.categories[page.category] %} {% assign category_posts =
+    site.categories[page.category] | sort: 'date' | reverse %} {% for post in
+    category_posts %}
     <article class="post-card">
       <div class="post-meta">
         <time>{{ post.date | date: "%B %-d, %Y" }}</time>
@@ -30,6 +28,8 @@ layout: default
       <div class="post-excerpt">{{ post.description }}</div>
       {% endif %}
     </article>
-    {% endfor %}
+    {% endfor %} {% else %}
+    <p class="no-posts">No posts found in this category.</p>
+    {% endif %}
   </div>
 </div>
