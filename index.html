@@ -76,8 +76,8 @@ title: Home
 
         <div class="post-excerpt">
           {% if post.content contains '<!--more-->' %} {{ post.content | split:'<!--more-->'
-          | first | strip_html | truncatewords: 25 }} {% else %} {{ post.content
-          | strip_html | truncatewords: 25 }} {% endif %}
+          | first | strip_html | truncatewords: 75 }} {% else %} {{ post.content
+          | strip_html | truncatewords: 75 }} {% endif %}
         </div>
 
         <a href="{{ post.url }}" class="read-more">Read post →</a>
