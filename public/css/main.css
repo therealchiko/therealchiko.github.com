@@ -1008,6 +1008,116 @@ body {
   background: rgba(47, 133, 90, 0.15);
 }
 
+/* Post Category Banner */
+.post-category-banner {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  padding: 0.75rem 0;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.category-context {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.reading-in {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.back-home {
+  font-size: 0.9rem;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.back-home:hover {
+  color: #2d2d2d;
+}
+
+/* Category-specific styling */
+.post-category-banner.programming .category-link { color: #ac4142; }
+.post-category-banner.success .category-link { color: #2c5282; }
+.post-category-banner.startups .category-link { color: #2f855a; }
+
+/* More from Category Section */
+.more-from-category {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  color: #2d2d2d;
+  margin: 0 0 1.5rem;
+}
+
+.related-posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.related-post-card {
+  padding: 1.25rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.related-post-card:hover {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transform: translateY(-2px);
+}
+
+.related-post-card h4 {
+  color: #2d2d2d;
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+}
+
+.related-post-card time {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.view-category {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #666;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.view-category:hover {
+  color: #2d2d2d;
+}
+
+@media (max-width: 768px) {
+  .related-posts {
+    grid-template-columns: 1fr;
+  }
+  
+  .post-category-banner {
+    padding: 0.75rem 1rem;
+  }
+}
+
 /* Single Post Layout and Typography */
 .post {
   max-width: 768px;
@@ -1212,4 +1322,87 @@ article.post .post-tags {
   .post-content h3 {
     font-size: 1.25rem;
   }
+}
+
+/* Category-specific title hover colors */
+.category-section.programming .post-title a:hover {
+  color: #ac4142;
+}
+
+.category-section.success .post-title a:hover {
+  color: #2c5282;
+}
+
+.category-section.startups .post-title a:hover {
+  color: #2f855a;
+}
+
+/* Remove underlines from action links */
+.view-category,
+.read-more,
+.back-home,
+.related-post-card {
+  text-decoration: none;
+}
+
+.view-category:hover,
+.back-home:hover {
+  text-decoration: none;
+  color: #2d2d2d;
+}
+
+/* Category-specific read more hover states */
+.category-section.programming .read-more:hover {
+  color: #ac4142;
+  text-decoration: none;
+}
+
+.category-section.success .read-more:hover {
+  color: #2c5282;
+  text-decoration: none;
+}
+
+.category-section.startups .read-more:hover {
+  color: #2f855a;
+  text-decoration: none;
+}
+
+/* Post footer links */
+.post-footer a,
+.more-from-category a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post-footer a:hover,
+.more-from-category a:hover {
+  text-decoration: none;
+}
+
+/* Category-specific tag styling in posts */
+article.post.programming .post-tags .tag {
+  background: rgba(172, 65, 66, 0.08);
+  color: #ac4142;
+}
+
+article.post.programming .post-tags .tag:hover {
+  background: rgba(172, 65, 66, 0.15);
+}
+
+article.post.success .post-tags .tag {
+  background: rgba(44, 82, 130, 0.08);
+  color: #2c5282;
+}
+
+article.post.success .post-tags .tag:hover {
+  background: rgba(44, 82, 130, 0.15);
+}
+
+article.post.startups .post-tags .tag {
+  background: rgba(47, 133, 90, 0.08);
+  color: #2f855a;
+}
+
+article.post.startups .post-tags .tag:hover {
+  background: rgba(47, 133, 90, 0.15);
 }

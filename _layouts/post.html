@@ -2,7 +2,19 @@
 layout: default
 ---
 
-<article class="post">
+<article class="post {{ page.categories[0] | downcase }}">
+  <!-- Category Navigation Banner -->
+  {% assign category = page.categories[0] %}
+  <div class="post-category-banner {{ category | downcase }}">
+    <div class="category-context">
+      <span class="reading-in">Reading in</span>
+      <a href="/category/{{ category | downcase }}/" class="category-link"
+        >{{ category }}</a
+      >
+    </div>
+    <a href="/" class="back-home">← All Categories</a>
+  </div>
+
   <header class="post-header">
     <div class="post-meta">
       <time class="post-date">{{ page.date | date: "%B %-d, %Y" }}</time>
@@ -24,14 +36,29 @@ layout: default
 
   <div class="post-content">{{ content }}</div>
 
+  <!-- More from Category Section -->
+  <aside class="more-from-category">
+    <h3 class="section-title">More from {{ category }}</h3>
+    <div class="related-posts">
+      {% assign posts = site.categories[category] | where_exp:"post", "post.url
+      != page.url" %} {% for post in posts limit:3 %}
+      <a href="{{ post.url }}" class="related-post-card">
+        <h4>{{ post.title }}</h4>
+        <time>{{ post.date | date: "%B %-d, %Y" }}</time>
+      </a>
+      {% endfor %}
+    </div>
+    <a href="/category/{{ category | downcase }}/" class="view-category"
+      >View all {{ category }} posts →</a
+    >
+  </aside>
+
   <footer class="post-footer">
     <div class="author-bio">
       <div class="author-info">
         <h3>Written by Chiko Mukwenha</h3>
-        </div>
       </div>
     </div>
   </footer>
   {% include newsletter.html %}
 </article>
-
