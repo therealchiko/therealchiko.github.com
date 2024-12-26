@@ -49,15 +49,23 @@ title: Home
   > 0 %}
   <section class="category-section {{ cat_name | downcase }}">
     <div class="category-header">
-      <h2 class="category-title">{{ cat_name }}</h2>
+      <div class="category-header-content">
+        <h2 class="category-title">{{ cat_name }}</h2>
+        {% capture description %} {% case cat_name %} {% when 'Programming' %}
+        Deep dives into software engineering, architecture, and clean code {%
+        when 'Success' %} Lessons learned on the path to personal and
+        professional growth {% when 'Startups' %} Building products, growing
+        businesses, and navigating the startup world {% endcase %} {% endcapture
+        %}
+        <p class="category-description">{{ description | strip }}</p>
+      </div>
       <a href="/category/{{ cat_name | downcase }}/" class="category-link"
         >View all →</a
       >
     </div>
 
     <div class="posts-grid">
-      {% assign sorted_posts = cat_posts | sort: 'date' | reverse %} {% for post
-      in sorted_posts limit:4 %}
+      {% for post in cat_posts limit:4 %}
       <article class="post-card">
         <div class="post-meta">
           <time>{{ post.date | date: "%B %-d, %Y" }}</time>
