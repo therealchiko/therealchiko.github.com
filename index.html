@@ -47,7 +47,7 @@ title: Home
   for cat_name in all_categories %} {% assign cat_posts = site.posts |
   where_exp: "post", "post.categories contains cat_name" %} {% if cat_posts.size
   > 0 %}
-  <section class="category-section">
+  <section class="category-section {{ cat_name | downcase }}">
     <div class="category-header">
       <h2 class="category-title">{{ cat_name }}</h2>
       <a href="/category/{{ cat_name | downcase }}/" class="category-link"

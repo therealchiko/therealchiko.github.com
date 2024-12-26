@@ -6,7 +6,7 @@ layout: default
 {% comment %} Category from page: {{ page.category | inspect }} Available
 categories: {{ site.categories | inspect }} {% endcomment %}
 
-<div class="category-page">
+<div class="category-section {{ page.category | downcase }}">
   <header class="category-header">
     {% assign current_category = page.category | default: page.title | split:
     "'" | last | split: " " | first %}
