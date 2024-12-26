@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Object Oriented design, a friendly intro"
+title: "Object Oriented design: a friendly intro"
 description: ""
 tags: []
 categories: ["Programming"]

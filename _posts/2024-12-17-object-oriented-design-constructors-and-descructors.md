@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Object oriented design: Constructors and descructors"
+title: "Object oriented design: Constructors and destructors"
 description: ""
 tags: []
 categories: ["Programming"]
