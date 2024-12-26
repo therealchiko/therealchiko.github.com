@@ -876,6 +876,16 @@ body {
   color: #ac4142;
 }
 
+.category-section.programming .category-link,
+.category-section.programming .read-more {
+  color: #ac4142;
+}
+
+.category-section.programming .category-link:hover,
+.category-section.programming .read-more:hover {
+  color: #bf4445;
+}
+
 .category-section.success {
   border-left: 3px solid #2c5282;
   padding-left: 1.5rem;
@@ -885,6 +895,16 @@ body {
   color: #2c5282;
 }
 
+.category-section.success .category-link,
+.category-section.success .read-more {
+  color: #2c5282;
+}
+
+.category-section.success .category-link:hover,
+.category-section.success .read-more:hover {
+  color: #3a689e;
+}
+
 .category-section.startups {
   border-left: 3px solid #2f855a;
   padding-left: 1.5rem;
@@ -892,6 +912,16 @@ body {
 
 .category-section.startups .category-title {
   color: #2f855a;
+}
+
+.category-section.startups .category-link,
+.category-section.startups .read-more {
+  color: #2f855a;
+}
+
+.category-section.startups .category-link:hover,
+.category-section.startups .read-more:hover {
+  color: #3ea06f;
 }
 
 /* Update post cards within each section */
