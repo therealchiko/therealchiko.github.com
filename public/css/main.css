@@ -260,15 +260,56 @@ body {
 .category-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+
+.category-header-content {
+  flex: 1;
 }
 
 .category-title {
   font-size: 1.75rem;
+  margin: 0 0 0.5rem;
+  letter-spacing: -0.5px;
+}
+
+.category-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
   margin: 0;
-  color: #2d2d2d;
-  text-transform: uppercase;
+  max-width: 600px;
+  font-weight: 400;
+}
+
+/* Category-specific description styling */
+.category-section.programming .category-description {
+  color: rgba(172, 65, 66, 0.75);
+}
+
+.category-section.success .category-description {
+  color: rgba(44, 82, 130, 0.75);
+}
+
+.category-section.startups .category-description {
+  color: rgba(47, 133, 90, 0.75);
+}
+
+/* Subtle separator between title and description */
+.category-header-content {
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.category-header-content::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.1;
 }
 
 .category-link {
