@@ -1406,3 +1406,102 @@ article.post.startups .post-tags .tag {
 article.post.startups .post-tags .tag:hover {
   background: rgba(47, 133, 90, 0.15);
 }
+
+/* Homepage Mobile Styles */
+@media (max-width: 768px) {
+  /* Only target homepage hero section */
+  body:not(.post):not(.category):not(.tag) .hero-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .intro-content {
+    max-width: 100%;
+  }
+
+  body:not(.post):not(.category):not(.tag) .intro-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .intro-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Quick stats mobile layout */
+  body:not(.post):not(.category):not(.tag) .quick-stats {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .stat-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.875rem;
+    margin: 0;
+  }
+
+  body:not(.post):not(.category):not(.tag) .reading-next {
+    margin-top: 1rem;
+    padding: 0.875rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .currently-reading,
+  body:not(.post):not(.category):not(.tag) .next-post {
+    padding: 0.75rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .section-content h3 {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .section-content p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Newsletter on homepage */
+  body:not(.post):not(.category):not(.tag) .newsletter-minimal {
+    margin-top: 1.5rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .newsletter-minimal form {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .newsletter-minimal input,
+  body:not(.post):not(.category):not(.tag) .newsletter-minimal button {
+    width: 100%;
+    padding: 0.75rem;
+  }
+}
+
+/* Even smaller screens */
+@media (max-width: 480px) {
+  body:not(.post):not(.category):not(.tag) .hero-section {
+    padding: 1rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .intro-title {
+    font-size: 1.5rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .stat-card {
+    padding: 0.75rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .stat-number {
+    font-size: 1.25rem;
+  }
+
+  body:not(.post):not(.category):not(.tag) .stat-label {
+    font-size: 0.75rem;
+  }
+}
