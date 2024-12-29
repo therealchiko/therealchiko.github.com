@@ -54,3 +54,8 @@ reading:
   current_book: "Flutter Engineering by Majid Hajian"
 upcoming:
   next_post: "How to use UUIDs in Flutter using Drift"
+
+port: 4001
+
+disqus:
+  shortname: chikomukwenhaco # Replace with your Disqus shortname
