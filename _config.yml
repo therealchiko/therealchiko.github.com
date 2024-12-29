@@ -53,7 +53,7 @@ pagination:
 reading:
   current_book: "Flutter Engineering by Majid Hajian"
 upcoming:
-  next_post: "How to use UUIDs in Flutter using Drift"
+  next_post: "Thoughts on coding with AI"
 
 port: 4001
 
