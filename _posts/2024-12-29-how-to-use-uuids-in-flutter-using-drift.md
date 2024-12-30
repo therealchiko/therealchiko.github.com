@@ -98,4 +98,4 @@ class Books extends Table {
 }
 ```
 
-With that we’re done, provided we implement UUIDs on the Laravel (API) side as well. On the Flutter side of things, our books will get created with their keys as UUIDs and set sent up to the server that will receive a unique has as primary key. The point of having UUIDs on the server as well, is if we allow creation of books on the server directly, bypassing the Flutter mobile app.
+With that we’re done, provided we implement UUIDs on the Laravel (API) side as well. On the Flutter side of things, our books will get created with their keys as UUIDs and set sent up to the server that will receive a unique id as primary key. The point of having UUIDs on the server as well, is if we allow creation of books on the server directly or if we have an app that we're distributing on various platforms.
