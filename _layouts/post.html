@@ -52,26 +52,18 @@ layout: default
       >View all {{ category }} posts →</a
     >
   </aside>
-
-  <footer class="post-footer">
-    <div class="author-bio">
-      <div class="author-info">
-        <h3>Written by Chiko Mukwenha</h3>
-      </div>
-    </div>
-  </footer>
-  {% include newsletter.html %} {% if site.disqus_shortname %}
+  {% if site.disqus.shortname %}
   <div class="post-comments">
     <div id="disqus_thread"></div>
     <script>
       var disqus_config = function () {
-        this.page.url = "{{ site.url }}{{ page.url }}";
-        this.page.identifier = "{{ page.url }}";
+        this.page.url = "{{ page.url | absolute_url }}";
+        this.page.identifier = "{{ page.id }}";
       };
       (function () {
         var d = document,
           s = d.createElement("script");
-        s.src = "https://{{ site.disqus_shortname }}.disqus.com/embed.js";
+        s.src = "https://{{ site.disqus.shortname }}.disqus.com/embed.js";
         s.setAttribute("data-timestamp", +new Date());
         (d.head || d.body).appendChild(s);
       })();
@@ -83,5 +75,5 @@ layout: default
       ></noscript
     >
   </div>
-  {% endif %}
+  {% endif %} {% include newsletter.html %}
 </article>

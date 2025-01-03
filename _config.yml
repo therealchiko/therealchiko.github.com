@@ -11,7 +11,7 @@ permalink: /:categories/:title/
 title: Chiko Mukwenha
 tagline: Product Engineer
 description: ""
-url: http://chikomukwenha.co
+url: https://chikomukwenha.co
 baseurl: /
 reading: /reading
 
@@ -58,4 +58,4 @@ upcoming:
 port: 4001
 
 disqus:
-  shortname: chikomukwenhaco # Replace with your Disqus shortname
+  shortname: chikomukwenhaco
