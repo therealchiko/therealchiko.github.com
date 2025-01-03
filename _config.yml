@@ -53,7 +53,7 @@ pagination:
 reading:
   current_book: "Flutter Engineering by Majid Hajian"
 upcoming:
-  next_post: "Thoughts on coding with AI"
+  next_post: "What golf has taught me about software engineering"
 
 port: 4001
 
