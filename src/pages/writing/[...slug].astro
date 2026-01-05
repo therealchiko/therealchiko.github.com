@@ -1,0 +1,84 @@
+---
+import Base from '../../layouts/Base.astro';
+import ReadingProgress from '../../components/ReadingProgress.astro';
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import { sortPostsByDate, getPostDate } from '../../utils/posts';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('writing');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<'writing'>;
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const postDate = getPostDate(post);
+
+// Calculate reading time (rough estimate: 200 words per minute)
+const wordCount = post.body.split(/\s+/).length;
+const readingTime = Math.ceil(wordCount / 200);
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric'
+  });
+}
+
+// Get prev/next posts
+const allPosts = await getCollection('writing', ({ data }) => !data.draft);
+const sortedPosts = sortPostsByDate(allPosts);
+const currentIndex = sortedPosts.findIndex((p) => p.slug === post.slug);
+const prevPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
+const nextPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+---
+
+<Base title={post.data.title} description={post.data.description}>
+  <ReadingProgress />
+
+  <article>
+    <header class="mb-12">
+      <h1 class="text-3xl md:text-4xl font-semibold mb-4 tracking-tight">{post.data.title}</h1>
+      <div class="flex items-center gap-3 text-[var(--color-muted)]">
+        <time datetime={postDate.toISOString()}>{formatDate(postDate)}</time>
+        <span>&middot;</span>
+        <span>{readingTime} min read</span>
+      </div>
+    </header>
+
+    <div class="prose">
+      <Content />
+    </div>
+  </article>
+
+  {(prevPost || nextPost) && (
+    <nav class="mt-16 pt-8 border-t border-[var(--color-surface)]">
+      <div class="flex justify-between">
+        {prevPost ? (
+          <a href={`/writing/${prevPost.slug}/`} class="group">
+            <span class="text-sm text-[var(--color-muted)]">&larr; Previous</span>
+            <div class="text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors">
+              {prevPost.data.title}
+            </div>
+          </a>
+        ) : <div />}
+        {nextPost ? (
+          <a href={`/writing/${nextPost.slug}/`} class="text-right group">
+            <span class="text-sm text-[var(--color-muted)]">Next &rarr;</span>
+            <div class="text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors">
+              {nextPost.data.title}
+            </div>
+          </a>
+        ) : <div />}
+      </div>
+    </nav>
+  )}
+</Base>

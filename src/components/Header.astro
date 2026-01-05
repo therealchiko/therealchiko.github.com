@@ -1,0 +1,30 @@
+---
+const pathname = Astro.url.pathname;
+const navItems = [
+  { href: '/writing/', label: 'Writing' },
+  { href: '/building/', label: 'Building' },
+  { href: '/now/', label: 'Now' },
+];
+---
+
+<header class="max-w-3xl mx-auto px-6 py-8 flex items-center justify-between relative z-10">
+  <a href="/" class="text-xl font-bold text-[var(--color-text)] hover:text-[var(--color-accent)] transition-colors">
+    chiko<span class="text-[var(--color-accent)]">.</span>
+  </a>
+
+  <nav class="flex items-center gap-6">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        class={`text-sm font-medium transition-colors ${
+          pathname === item.href || (item.href !== '/' && pathname.startsWith(item.href))
+            ? 'text-[var(--color-accent)]'
+            : 'text-[var(--color-muted)] hover:text-[var(--color-text)]'
+        }`}
+      >
+        {item.label}
+      </a>
+    ))}
+
+  </nav>
+</header>

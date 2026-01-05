@@ -1,0 +1,78 @@
+---
+import Base from '../layouts/Base.astro';
+import MetricsCard from '../components/MetricsCard.astro';
+import PostList from '../components/PostList.astro';
+import { getCollection } from 'astro:content';
+import { sortPostsByDate, getPostDate } from '../utils/posts';
+
+const allPosts = await getCollection('writing', ({ data }) => !data.draft);
+const sortedPosts = sortPostsByDate(allPosts);
+const recentPosts = sortedPosts.slice(0, 5).map(post => ({
+  ...post,
+  data: { ...post.data, date: getPostDate(post) }
+}));
+---
+
+<Base title="Home">
+  <!-- Hero Section -->
+  <section class="mb-20">
+    <div class="flex items-start gap-6 mb-8">
+      <!-- Photo placeholder -->
+      <div class="avatar-placeholder">
+        C
+      </div>
+      <div>
+        <p class="text-2xl font-semibold text-[var(--color-accent)] mb-1">Hey, I'm Chiko</p>
+        <p class="text-[var(--color-muted)]">Product engineer & builder</p>
+      </div>
+    </div>
+
+    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+      Writing about
+      <span class="gradient-text">engineering,</span>
+      <br />
+      <span class="gradient-text">startups,</span> and <span class="italic">life.</span>
+    </h1>
+
+    <p class="text-xl text-[var(--color-muted)] leading-relaxed max-w-xl mb-6">
+      Ideas, lessons, and the occasional rant. Also building products in public.
+    </p>
+
+    <div class="flex items-center gap-4">
+      <a href="https://twitter.com/therealchiko" target="_blank" class="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+      </a>
+      <a href="mailto:hi@chikomukwenha.co" class="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Metrics Card -->
+  <section class="mb-20">
+    <MetricsCard />
+  </section>
+
+  <!-- Recent Writing -->
+  <section>
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl font-bold">
+        <span class="underline-sketch">Recent Writing</span>
+      </h2>
+      <a href="/writing/" class="text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors group">
+        View all
+        <span class="inline-block transition-transform group-hover:translate-x-1">&rarr;</span>
+      </a>
+    </div>
+
+    {recentPosts.length > 0 ? (
+      <PostList posts={recentPosts} />
+    ) : (
+      <p class="text-[var(--color-muted)]">No posts yet. Check back soon.</p>
+    )}
+  </section>
+</Base>

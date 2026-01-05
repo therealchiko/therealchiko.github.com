@@ -1,0 +1,41 @@
+---
+interface Post {
+  slug: string;
+  data: {
+    title: string;
+    date: Date;
+  };
+}
+
+interface Props {
+  posts: Post[];
+  basePath?: string;
+}
+
+const { posts, basePath = '/writing' } = Astro.props;
+
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', {
+    month: 'short',
+    year: 'numeric'
+  });
+}
+---
+
+<ul class="space-y-4">
+  {posts.map((post) => (
+    <li>
+      <a
+        href={`${basePath}/${post.slug}/`}
+        class="flex items-baseline justify-between group py-2"
+      >
+        <span class="text-[var(--color-text)] group-hover:text-[var(--color-accent)] transition-colors">
+          {post.data.title}
+        </span>
+        <span class="text-sm text-[var(--color-muted)] ml-4 shrink-0">
+          {formatDate(post.data.date)}
+        </span>
+      </a>
+    </li>
+  ))}
+</ul>

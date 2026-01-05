@@ -1,0 +1,173 @@
+---
+import Base from '../../layouts/Base.astro';
+import metrics from '../../data/metrics.json';
+import { getCollection } from 'astro:content';
+import { getPostDate } from '../../utils/posts';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('writing', ({ data }) => !data.draft);
+
+  return metrics.projects.map((project) => {
+    // Get posts linked to this project
+    const projectPosts = allPosts.filter(post => post.data.project === project.id);
+    return {
+      params: { projectId: project.id },
+      props: { project, projectPosts }
+    };
+  });
+}
+
+const { project, projectPosts } = Astro.props;
+
+const today = new Date();
+const projectDays = Math.floor((today.getTime() - new Date(project.startDate).getTime()) / (1000 * 60 * 60 * 24));
+
+// Convert blog posts to journey items
+const postJourneyItems = projectPosts.map(post => {
+  const postDate = getPostDate(post);
+  return {
+    date: postDate.toISOString().split('T')[0],
+    type: 'post',
+    title: post.data.title,
+    description: post.data.description || '',
+    link: `/writing/${post.slug}/`
+  };
+});
+
+// Merge static journey entries with blog posts
+const allJourneyItems = [...project.journey, ...postJourneyItems];
+
+// Sort by date descending
+const sortedJourney = allJourneyItems.sort(
+  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+);
+
+const formatDate = (dateStr: string) => {
+  return new Date(dateStr).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+    year: 'numeric'
+  });
+};
+---
+
+<Base title={`Building ${project.name}`}>
+  <section class="mb-12">
+    <a href="/building/" class="text-sm text-[var(--color-muted)] hover:text-[var(--color-accent)] transition-colors mb-4 inline-block">
+      &larr; All projects
+    </a>
+
+    <div class="flex items-start justify-between mb-4">
+      <div>
+        <h1 class="text-3xl font-semibold gradient-text mb-2">
+          <a href={project.url} target="_blank" class="hover:opacity-80 transition-opacity">
+            {project.name}
+          </a>
+        </h1>
+        <p class="text-[var(--color-muted)]">{project.description}</p>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="flex items-center gap-8 p-6 bg-[var(--color-surface)] rounded-2xl mt-6">
+      <div>
+        <div class="text-3xl font-bold gradient-text">${project.revenue}</div>
+        <div class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Total Revenue</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">{projectDays}</div>
+        <div class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Days Building</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold">{sortedJourney.length}</div>
+        <div class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Updates</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Journey Timeline -->
+  <section class="mb-12">
+    <h2 class="text-xl font-semibold mb-6">
+      <span class="underline-sketch">The Journey</span>
+    </h2>
+
+    <div class="relative">
+      <!-- Timeline line -->
+      <div class="absolute left-4 top-0 bottom-0 w-px bg-[var(--color-surface)]"></div>
+
+      <div class="space-y-6">
+        {sortedJourney.map((event) => (
+          <div class="relative pl-12">
+            <!-- Timeline dot -->
+            <div class={`absolute left-2 w-5 h-5 rounded-full border-2 border-[var(--color-bg)] ${
+              event.type === 'revenue'
+                ? 'bg-green-500'
+                : event.type === 'launch'
+                  ? 'bg-[var(--color-accent)]'
+                  : event.type === 'post'
+                    ? 'bg-blue-500'
+                    : 'bg-[var(--color-surface)]'
+            }`}></div>
+
+            <div class="p-4 bg-[var(--color-surface)] rounded-xl">
+              <div class="flex items-center gap-3 mb-2">
+                <span class="text-xs text-[var(--color-muted)]">{formatDate(event.date)}</span>
+                {event.type === 'revenue' && (
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-green-500/20 text-green-400">
+                    Revenue
+                  </span>
+                )}
+                {event.type === 'launch' && (
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-[var(--color-accent)]/20 text-[var(--color-accent)]">
+                    Launch
+                  </span>
+                )}
+                {event.type === 'post' && (
+                  <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400">
+                    Blog Post
+                  </span>
+                )}
+              </div>
+
+              {event.link ? (
+                <a href={event.link} class="font-semibold mb-1 hover:text-[var(--color-accent)] transition-colors block">
+                  {event.title} &rarr;
+                </a>
+              ) : (
+                <h3 class="font-semibold mb-1">{event.title}</h3>
+              )}
+
+              {event.description && (
+                <p class="text-sm text-[var(--color-muted)]">{event.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {sortedJourney.length === 0 && (
+      <p class="text-[var(--color-muted)]">
+        The journey begins now. First update coming soon.
+      </p>
+    )}
+  </section>
+
+  <!-- Lessons Learned -->
+  {project.lessons && project.lessons.length > 0 && (
+    <section>
+      <h2 class="text-xl font-semibold mb-6">
+        <span class="underline-sketch">Lessons Learned</span>
+      </h2>
+
+      <div class="space-y-4">
+        {project.lessons.map((lesson) => (
+          <a href={lesson.link} class="block p-4 bg-[var(--color-surface)] rounded-xl hover:border-[var(--color-accent)] border border-transparent transition-colors">
+            <h3 class="font-semibold mb-1">{lesson.title}</h3>
+            <p class="text-sm text-[var(--color-muted)]">{lesson.description}</p>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+</Base>

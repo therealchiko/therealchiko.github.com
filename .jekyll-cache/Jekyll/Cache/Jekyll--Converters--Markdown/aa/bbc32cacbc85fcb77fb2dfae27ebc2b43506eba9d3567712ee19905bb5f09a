@@ -1,7 +1,0 @@
-I"�<p>Recently I had to help with maintenance of a server that I didn’t configure myself that had maxed out its storage (the horror!). Anyway, it took me some time to figure out it was using the handy and useful <a href="http://rdiff-backup.nongnu.org/">rdiff-backup</a> package to create and store backups automatically. Rdiff-backup’s mission is succinctly put as <em>an idea is to combine the best features of a mirror and an incremental backup</em></p>
-
-<p>As it turns out, rdiff-backup does come with a handy tool to configure it to delete backups that are x-days old e.g 4 weeks:</p>
-
-<p><code class="language-plaintext highlighter-rouge">rdiff-backup --remove-older-than 4W target-dir</code></p>
-
-:ET

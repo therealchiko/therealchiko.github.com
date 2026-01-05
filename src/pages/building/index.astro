@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import metrics from '../../data/metrics.json';
+
+const projects = metrics.projects;
+const today = new Date();
+---
+
+<Base title="Building">
+  <section class="mb-12">
+    <h1 class="text-3xl font-semibold mb-4">Building in Public</h1>
+    <p class="text-[var(--color-muted)] mb-8">
+      Documenting the journey — real numbers, real lessons, real failures.
+    </p>
+
+    <!-- Projects List -->
+    <div class="space-y-4">
+      {projects.map((project) => {
+        const projectDays = Math.floor((today.getTime() - new Date(project.startDate).getTime()) / (1000 * 60 * 60 * 24));
+        return (
+          <a href={`/building/${project.id}/`} class="block p-6 bg-[var(--color-surface)] rounded-2xl border border-transparent hover:border-[var(--color-accent)] transition-all duration-300 group relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-br from-[var(--color-accent)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+            <div class="relative">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xl font-semibold gradient-text">{project.name}</span>
+                <span class="text-xs text-[var(--color-muted)] px-2 py-1 rounded-full bg-[var(--color-bg)]">
+                  {project.tagline}
+                </span>
+              </div>
+
+              <p class="text-sm text-[var(--color-muted)] mb-4">{project.description}</p>
+
+              <div class="flex items-center gap-6">
+                <div>
+                  <div class="text-2xl font-bold gradient-text">${project.revenue}</div>
+                  <div class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Total</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold">{projectDays}</div>
+                  <div class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Days</div>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold">{project.journey.length}</div>
+                  <div class="text-xs text-[var(--color-muted)] uppercase tracking-wider">Updates</div>
+                </div>
+                <div class="ml-auto text-[var(--color-muted)] group-hover:text-[var(--color-accent)] transition-colors text-sm">
+                  View journey
+                  <span class="inline-block transition-transform group-hover:translate-x-1 ml-1">&rarr;</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        );
+      })}
+    </div>
+  </section>
+</Base>

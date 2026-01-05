@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import metrics from '../data/metrics.json';
+---
+
+<Base title="Projects">
+  <article class="prose">
+    <h1>Projects</h1>
+    <p class="text-[var(--color-muted)] !mt-0">Things I'm building and have built.</p>
+
+    <hr />
+
+    <h2>Current</h2>
+
+    <h3>{metrics.productName}</h3>
+    <p>{metrics.tagline} that helps creators and marketers produce content faster.</p>
+    <p>
+      <strong>Status:</strong> Active development<br />
+      <strong>Website:</strong> <a href={metrics.productUrl} target="_blank">{metrics.productUrl}</a>
+    </p>
+    <p>
+      I'm building this in public — follow along in the <a href="/building/">Building</a> section
+      for monthly updates, lessons learned, and real numbers.
+    </p>
+
+    <hr />
+
+    <h2>Past Work</h2>
+    <p>
+      Over the years, I've worked on various products as a product engineer. Some highlights:
+    </p>
+    <ul>
+      <li><strong>OneSheep</strong> — Spent 3 years building products for Christian organizations</li>
+      <li>Various client projects across React, Vue.js, React Native, Laravel, and Flutter</li>
+    </ul>
+
+    <hr />
+
+    <h2>Open Source</h2>
+    <p>Find my code on <a href="https://github.com/therealchiko" target="_blank">GitHub</a>.</p>
+
+    <hr />
+
+    <h2>Want to collaborate?</h2>
+    <p>
+      I'm always interested in interesting problems. Reach out on
+      <a href="https://x.com/therealchiko" target="_blank">X</a> or
+      <a href="https://www.linkedin.com/in/chikomukwenha/" target="_blank">LinkedIn</a>.
+    </p>
+  </article>
+</Base>

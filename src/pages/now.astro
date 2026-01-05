@@ -1,0 +1,48 @@
+---
+import Base from '../layouts/Base.astro';
+import metrics from '../data/metrics.json';
+---
+
+<Base title="Now">
+  <article class="prose">
+    <h1>Now</h1>
+    <p class="text-[var(--color-muted)] !mt-0">
+      <em>Last updated: January 2026</em>
+    </p>
+
+    <p>
+      This is my <a href="https://nownownow.com/about" target="_blank">now page</a> —
+      a snapshot of what I'm focused on at this point in my life.
+    </p>
+
+    <h2>Building</h2>
+    <p>
+      I'm building <a href={metrics.productUrl} target="_blank">{metrics.productName}</a>,
+      a content creation tool. This is my main focus right now, and I'm documenting
+      the journey publicly — the wins, the failures, and everything in between.
+    </p>
+
+    <h2>Learning</h2>
+    <p>Currently deepening my understanding of:</p>
+    <ul>
+      <li>Flutter & mobile development patterns</li>
+      <li>Object-oriented design principles</li>
+      <li>The craft of building products people actually want</li>
+    </ul>
+
+    <h2>Reading</h2>
+    <p>Flutter Engineering by Majid Hajian</p>
+
+    <h2>Location</h2>
+    <p>Digital nomad life — currently based wherever the wifi is good.</p>
+
+    <hr />
+
+    <p>
+      <em>
+        Inspired by <a href="https://sive.rs/now" target="_blank">Derek Sivers</a>
+        and the /now page movement.
+      </em>
+    </p>
+  </article>
+</Base>
