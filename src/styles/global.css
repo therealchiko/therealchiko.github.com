@@ -332,23 +332,19 @@ html.light .prose hr {
   background: var(--color-accent);
 }
 
-/* View Transitions */
+/* View Transitions - simple crossfade */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
 ::view-transition-old(root) {
-  animation: 150ms ease-out fade-out;
+  opacity: 1;
 }
 
 ::view-transition-new(root) {
-  animation: 150ms ease-in fade-in;
-}
-
-@keyframes fade-in {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fade-out {
-  from { opacity: 1; transform: translateY(0); }
-  to { opacity: 0; transform: translateY(-10px); }
+  opacity: 1;
 }
 
 /* Button styles */
