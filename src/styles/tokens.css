@@ -1,0 +1,123 @@
+/*
+ * Design Tokens
+ *
+ * The single source of truth for the visual language.
+ * Nothing here produces visible output — only custom properties.
+ *
+ * Naming: --{category}-{property}-{variant}
+ *   e.g. --color-text-muted, --font-body, --space-section
+ */
+
+/* --------------------------------------------------------
+ * Color
+ * Warm, restrained palette. One accent color (terracotta).
+ * Light mode is default; dark mode overrides below.
+ * -------------------------------------------------------- */
+:root {
+  /* Surface */
+  --color-bg:        #f7f5f2;
+  --color-surface:   #efecea;
+
+  /* Text */
+  --color-text:       #2a2a2a;
+  --color-text-muted: #888888;
+
+  /* Accent — warm terracotta */
+  --color-accent:       #c45a3c;
+  --color-accent-hover: #a84830;
+
+  /* Borders & dividers */
+  --color-border: #e5e2df;
+
+  /* Selection */
+  --color-selection-bg:   #c45a3c;
+  --color-selection-text:  #fff;
+
+  /* Code */
+  --color-code-bg: #efecea;
+
+  color-scheme: light dark;
+}
+
+/* Dark mode */
+.dark {
+  --color-bg:        #1a1a18;
+  --color-surface:   #242422;
+
+  --color-text:       #d4d0cc;
+  --color-text-muted: #777773;
+
+  --color-accent:       #d4785c;
+  --color-accent-hover: #e08a6e;
+
+  --color-border: #333330;
+
+  --color-selection-bg:   #d4785c;
+  --color-selection-text:  #1a1a18;
+
+  --color-code-bg: #242422;
+}
+
+/* --------------------------------------------------------
+ * Typography
+ *
+ * Body: system serif (Iowan → Palatino → Georgia)
+ * UI:   system sans
+ * Code: monospace stack
+ *
+ * Fluid base size: 17px → 21px via clamp().
+ * Four-size scale only (Jarvis constraint).
+ * -------------------------------------------------------- */
+:root {
+  /* Font stacks */
+  --font-body: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-ui:   -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-code: "Berkeley Mono", "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, monospace;
+
+  /* Fluid base size */
+  --font-size-base: clamp(1.0625rem, 0.4vi + 0.875rem, 1.3125rem);
+
+  /* Scale — four sizes */
+  --font-size-sm:    0.85em;   /* metadata, dates, captions */
+  --font-size-body:  1em;      /* body text */
+  --font-size-h2:    1.15em;   /* section headings */
+  --font-size-h1:    1.4em;    /* post titles */
+
+  /* Line heights */
+  --leading-body:    1.6;
+  --leading-heading: 1.25;
+
+  /* Weights */
+  --weight-normal:   400;
+  --weight-semibold: 600;
+}
+
+/* --------------------------------------------------------
+ * Spacing
+ *
+ * Based on a 1rem unit at the fluid base size.
+ * Named semantically where possible.
+ * -------------------------------------------------------- */
+:root {
+  --space-xs:      0.5rem;
+  --space-sm:      0.75rem;
+  --space-md:      1rem;
+  --space-lg:      1.5rem;
+  --space-xl:      2.5rem;
+  --space-section: 4rem;     /* between major page sections */
+
+  /* Paragraph spacing */
+  --space-paragraph: 1.5rem;
+
+}
+
+/* --------------------------------------------------------
+ * Layout
+ *
+ * Single centered column. Content max-width: 42rem (672px).
+ * Fluid horizontal padding.
+ * -------------------------------------------------------- */
+:root {
+  --layout-content: 42rem;
+  --layout-padding: clamp(1rem, 5vw, 3rem);
+}

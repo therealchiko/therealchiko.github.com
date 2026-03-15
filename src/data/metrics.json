@@ -1,0 +1,46 @@
+{
+  "projects": [
+    {
+      "id": "contentboost",
+      "name": "contentboo.st",
+      "url": "https://contentboo.st",
+      "tagline": "Content creation tool",
+      "description": "A tool to help creators produce better content faster.",
+      "revenue": 210,
+      "startDate": "2025-10-01",
+      "journey": [
+        {
+          "date": "2025-10-01",
+          "type": "milestone",
+          "title": "Started building",
+          "description": "Kicked off the project"
+        },
+        {
+          "date": "2025-12-15",
+          "type": "revenue",
+          "title": "First sale!",
+          "description": "Got my first paying customer - $210"
+        }
+      ],
+      "lessons": []
+    },
+    {
+      "id": "keeptabs",
+      "name": "usekeeptabs.com",
+      "url": "https://usekeeptabs.com",
+      "tagline": "Keep tabs on what matters",
+      "description": "Track what matters to you, effortlessly.",
+      "revenue": 0,
+      "startDate": "2025-06-18",
+      "journey": [
+        {
+          "date": "2025-06-18",
+          "type": "milestone",
+          "title": "Started building",
+          "description": "Kicked off the project"
+        }
+      ],
+      "lessons": []
+    }
+  ]
+}

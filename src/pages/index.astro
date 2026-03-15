@@ -1,16 +1,84 @@
 ---
+import Base from '../layouts/Base.astro';
+import PostList from '../components/PostList.astro';
+import { getCollection } from 'astro:content';
+import { sortPostsByDate, getPostDate } from '../utils/posts';
 
+const allPosts = await getCollection('writing', ({ data }) => !data.draft);
+const sortedPosts = sortPostsByDate(allPosts);
+const recentPosts = sortedPosts.slice(0, 5).map(post => ({
+  ...post,
+  data: { ...post.data, date: getPostDate(post) }
+}));
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Base title="Home">
+  <section class="intro">
+    <p>
+      I'm Chiko Mukwenha. I write about making things well
+      in a world that's moving fast.
+    </p>
+    <p class="current">
+      Currently building <a href="https://contentboo.st" target="_blank">contentboo.st</a>.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-heading">Recent writing</h2>
+    {recentPosts.length > 0 ? (
+      <PostList posts={recentPosts} />
+    ) : (
+      <p class="empty">No posts yet.</p>
+    )}
+    <a href="/writing/" class="view-all">All posts</a>
+  </section>
+</Base>
+
+<style>
+  .intro {
+    margin-bottom: var(--space-section);
+  }
+
+  .intro p {
+    font-size: var(--font-size-h2);
+    line-height: var(--leading-body);
+    margin: 0;
+  }
+
+  .current {
+    margin-top: var(--space-sm);
+    font-size: var(--font-size-body) !important;
+    color: var(--color-text-muted);
+  }
+
+  .section {
+    margin-bottom: var(--space-section);
+  }
+
+  .section-heading {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: var(--weight-semibold);
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.02em;
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-md);
+  }
+
+  .view-all {
+    display: inline-block;
+    margin-top: var(--space-md);
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .view-all:hover {
+    color: var(--color-accent);
+  }
+
+  .empty {
+    color: var(--color-text-muted);
+  }
+</style>

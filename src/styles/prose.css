@@ -1,0 +1,116 @@
+/*
+ * Prose Styles
+ *
+ * Applied to article/post content via the .prose class.
+ * Book-inspired typography: continuation paragraphs are indented,
+ * not separated by extra space.
+ */
+
+.prose {
+  max-width: var(--layout-content);
+}
+
+/* --------------------------------------------------------
+ * Paragraphs — book convention
+ *
+ * First paragraph after any element: no indent.
+ * Consecutive paragraphs: indented, no extra gap.
+ * -------------------------------------------------------- */
+.prose p {
+  margin: 0 0 var(--space-paragraph);
+  text-wrap: pretty;
+}
+
+.prose p + p {
+  /* No special treatment for consecutive paragraphs */
+}
+
+/* --------------------------------------------------------
+ * Headings
+ * -------------------------------------------------------- */
+.prose h1 {
+  font-size: var(--font-size-h1);
+  margin: 0 0 var(--space-lg);
+}
+
+.prose h2 {
+  font-size: var(--font-size-h2);
+  margin: var(--space-section) 0 var(--space-md);
+}
+
+.prose h3 {
+  font-size: var(--font-size-body);
+  font-weight: var(--weight-semibold);
+  margin: var(--space-xl) 0 var(--space-sm);
+}
+
+
+/* --------------------------------------------------------
+ * Lists
+ * -------------------------------------------------------- */
+.prose ul,
+.prose ol {
+  margin: 0 0 var(--space-paragraph);
+  padding-left: var(--space-lg);
+}
+
+.prose li {
+  margin-bottom: var(--space-xs);
+}
+
+.prose li + li {
+  /* Consistent spacing between items */
+}
+
+
+/* --------------------------------------------------------
+ * Blockquotes
+ * -------------------------------------------------------- */
+.prose blockquote {
+  border-left: 2px solid var(--color-border);
+  padding-left: var(--space-lg);
+  margin: var(--space-xl) 0;
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.prose blockquote p + p {
+  text-indent: 0;
+}
+
+/* --------------------------------------------------------
+ * Code blocks
+ * -------------------------------------------------------- */
+.prose pre {
+  margin: var(--space-xl) 0;
+}
+
+.prose code {
+  /* Inherits from base.css */
+}
+
+/* --------------------------------------------------------
+ * Images
+ * -------------------------------------------------------- */
+.prose img {
+  margin: var(--space-xl) 0;
+  border-radius: 3px;
+}
+
+/* --------------------------------------------------------
+ * Horizontal rules
+ * -------------------------------------------------------- */
+.prose hr {
+  margin: var(--space-section) auto;
+}
+
+/* --------------------------------------------------------
+ * Links in prose — inherit from base, already correct
+ * -------------------------------------------------------- */
+.prose a {
+  /* Inherits: text color, accent underline, hover → accent */
+}
+
+.prose strong {
+  font-weight: var(--weight-semibold);
+}

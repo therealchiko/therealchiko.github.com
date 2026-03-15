@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:chikomukwenha.co)",
+      "WebFetch(domain:pjrvs.com)",
+      "WebFetch(domain:craigmod.com)",
+      "WebFetch(domain:gwern.net)",
+      "WebFetch(domain:manuelmoreale.com)",
+      "WebFetch(domain:robinrendle.com)",
+      "WebFetch(domain:frankchimero.com)",
+      "WebFetch(domain:macwright.com)",
+      "WebFetch(domain:danluu.com)",
+      "WebFetch(domain:usefathom.com)",
+      "WebFetch(domain:web.archive.org)",
+      "Bash(curl:*)",
+      "Bash(npm run:*)"
+    ]
+  }
+}

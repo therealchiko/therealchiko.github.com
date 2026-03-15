@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/*
+ * Design System
+ *
+ * Import order matters:
+ * 1. Tokens  — custom properties, no output
+ * 2. Base    — element-level defaults
+ * 3. Prose   — article content styles
+ */
+@import "./tokens.css";
+@import "./base.css";
+@import "./prose.css";

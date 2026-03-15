@@ -1,0 +1,67 @@
+---
+import Base from '../../layouts/Base.astro';
+import PostList from '../../components/PostList.astro';
+import { getCollection } from 'astro:content';
+import { sortPostsByDate, getPostDate } from '../../utils/posts';
+
+const allPosts = await getCollection('writing', ({ data }) => !data.draft);
+const sortedPosts = sortPostsByDate(allPosts).map(post => ({
+  ...post,
+  data: { ...post.data, date: getPostDate(post) }
+}));
+
+const postsByYear = sortedPosts.reduce((acc, post) => {
+  const year = post.data.date.getFullYear();
+  if (!acc[year]) acc[year] = [];
+  acc[year].push(post);
+  return acc;
+}, {} as Record<number, typeof sortedPosts>);
+
+const years = Object.keys(postsByYear).map(Number).sort((a, b) => b - a);
+---
+
+<Base title="Writing">
+  <header class="page-header">
+    <h1 class="page-title">Writing</h1>
+    <p class="page-description">{sortedPosts.length} posts</p>
+  </header>
+
+  {years.map((year) => (
+    <section class="year-group">
+      <h2 class="year-label">{year}</h2>
+      <PostList posts={postsByYear[year]} />
+    </section>
+  ))}
+</Base>
+
+<style>
+  .page-header {
+    margin-bottom: var(--space-section);
+  }
+
+  .page-title {
+    font-family: var(--font-body);
+    font-size: var(--font-size-h1);
+    font-weight: var(--weight-normal);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .page-description {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: 0;
+  }
+
+  .year-group {
+    margin-bottom: var(--space-xl);
+  }
+
+  .year-label {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: var(--weight-semibold);
+    color: var(--color-text-muted);
+    margin: 0 0 var(--space-sm);
+  }
+</style>

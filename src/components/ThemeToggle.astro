@@ -1,0 +1,63 @@
+---
+/*
+ * ThemeToggle
+ *
+ * Simple light/dark toggle. Persists preference in localStorage.
+ * Uses "dark" class on <html> for dark mode (light is default).
+ */
+---
+
+<button
+  id="theme-toggle"
+  class="theme-toggle"
+  aria-label="Toggle dark mode"
+  type="button"
+>
+  <span class="toggle-icon" id="toggle-icon">●</span>
+</button>
+
+<style>
+  .theme-toggle {
+    position: fixed;
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    cursor: pointer;
+    color: var(--color-text-muted);
+    font-size: 0.6rem;
+    transition: color 0.2s ease, border-color 0.2s ease;
+    z-index: 50;
+  }
+
+  .theme-toggle:hover {
+    color: var(--color-text);
+    border-color: var(--color-text-muted);
+  }
+</style>
+
+<script>
+  function initThemeToggle() {
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+
+    function setTheme(dark: boolean) {
+      document.documentElement.classList.toggle('dark', dark);
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    }
+
+    toggle.addEventListener('click', () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      setTheme(!isDark);
+    });
+  }
+
+  initThemeToggle();
+  document.addEventListener('astro:after-swap', initThemeToggle);
+</script>
