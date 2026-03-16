@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Getting rid of rdiff-backup's incremental backups"
 tags: [unix, system-administration, backups, automation, server-maintenance]
 categories: ["Programming"]

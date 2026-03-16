@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Object oriented design: Constructors and destructors"
 description: ""
 tags: []

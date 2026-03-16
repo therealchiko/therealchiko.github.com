@@ -1,6 +1,5 @@
 ---
 title: A letter to everyone from my 7 year old niece
-layout: post
 tags: [environment, youth-perspective, recycling, personal-stories]
 categories: ["Success"]
 ---

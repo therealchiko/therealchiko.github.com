@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to add your own executable scripts to bash"
 tags: [bash, unix, automation, scripting, command-line]
 categories: ["Programming"]

@@ -1,0 +1,122 @@
+---
+/*
+ * NewsletterSignup
+ *
+ * Email capture form. Platform-agnostic: change the action URL
+ * in src/data/site.ts when you pick a provider.
+ *
+ * Supports Buttondown, Substack, ConvertKit, or any provider
+ * that accepts a POST with an email field.
+ */
+import { newsletter } from '../data/site';
+
+interface Props {
+  context?: 'homepage' | 'post';
+}
+
+const { context = 'homepage' } = Astro.props;
+const postContext = context === 'post';
+---
+
+<aside class="signup" aria-label="Newsletter signup">
+  {postContext ? (
+    <p class="signup-text">If you found this useful, I write about things like this regularly.</p>
+  ) : (
+    <p class="signup-text">Get notified when I publish something new.</p>
+  )}
+
+  {newsletter.provider === 'none' ? (
+    <p class="signup-placeholder">Newsletter coming soon.</p>
+  ) : (
+    <form
+      action={newsletter.action}
+      method="post"
+      target="_blank"
+      class="signup-form"
+    >
+      <input
+        type="email"
+        name={newsletter.emailField}
+        placeholder="your@email.com"
+        required
+        autocomplete="email"
+        class="signup-input"
+      />
+      <button type="submit" class="signup-button">Subscribe</button>
+    </form>
+  )}
+
+  <p class="signup-note">No spam. Unsubscribe anytime.</p>
+</aside>
+
+<style>
+  .signup {
+    border-top: 1px solid var(--color-border);
+    padding-top: var(--space-xl);
+    margin-top: var(--space-section);
+  }
+
+  .signup-text {
+    font-size: var(--font-size-body);
+    margin: 0 0 var(--space-md);
+  }
+
+  .signup-placeholder {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin: 0;
+  }
+
+  .signup-form {
+    display: flex;
+    gap: var(--space-xs);
+    max-width: 24rem;
+  }
+
+  .signup-input {
+    flex: 1;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--color-surface);
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+
+  .signup-input:focus {
+    border-color: var(--color-accent);
+  }
+
+  .signup-input::placeholder {
+    color: var(--color-text-muted);
+  }
+
+  .signup-button {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: var(--weight-semibold);
+    padding: var(--space-xs) var(--space-md);
+    background: var(--color-accent);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .signup-button:hover {
+    background: var(--color-accent-hover);
+  }
+
+  .signup-note {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin: var(--space-xs) 0 0;
+  }
+</style>

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Object Oriented design: a friendly intro"
 description: ""
 tags: []

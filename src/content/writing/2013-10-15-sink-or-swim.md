@@ -1,6 +1,5 @@
 ---
 title: Sink or swim
-layout: post
 tags: success life learning
 ---
 

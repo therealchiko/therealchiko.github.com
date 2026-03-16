@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How I passed AWS Developer Associate certification"
 description: ""
 tags: [aws, cloud-computing, certification, devops, professional-development, study-tips]

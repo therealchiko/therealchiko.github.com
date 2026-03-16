@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import PostList from '../components/PostList.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { getCollection } from 'astro:content';
 import { sortPostsByDate, getPostDate } from '../utils/posts';
 
@@ -32,6 +33,8 @@ const recentPosts = sortedPosts.slice(0, 5).map(post => ({
     )}
     <a href="/writing/" class="view-all">All posts</a>
   </section>
+
+  <NewsletterSignup context="homepage" />
 </Base>
 
 <style>

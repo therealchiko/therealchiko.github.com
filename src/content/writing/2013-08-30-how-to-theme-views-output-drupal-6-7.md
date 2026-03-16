@@ -1,5 +1,4 @@
 ---
-layout: post
 title: How to theme Views output Drupal 6/7
 categories: ["Programming"]
 tags: [drupal, views, theming, web-development, cms]

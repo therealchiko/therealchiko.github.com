@@ -1,7 +1,6 @@
 ---
 title: Africa is killing it in thinking
 tags: [education, africa, innovation, critical-thinking, tech-education]
-layout: post
 categories: ["Success"]
 ---
 

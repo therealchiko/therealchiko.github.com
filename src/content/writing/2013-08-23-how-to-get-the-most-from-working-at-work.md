@@ -1,7 +1,6 @@
 ---
 title: How to get the most from working at home
 tags: success freelance
-layout: post
 categories: ["Success"]
 ---
 

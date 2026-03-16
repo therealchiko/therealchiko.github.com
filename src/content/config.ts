@@ -16,21 +16,9 @@ const writing = defineCollection({
     categories: z.union([z.string(), z.array(z.string())]).optional(),
     tags: tagsSchema,
     description: z.string().optional(),
-    layout: z.string().optional(), // Ignore Jekyll layout field
     draft: z.boolean().optional().default(false),
     project: z.string().optional(), // Link post to a project (e.g., "contentboost", "keeptabs")
   }),
 });
 
-const building = defineCollection({
-  type: 'content',
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date().optional(),
-    tags: tagsSchema,
-    description: z.string().optional(),
-    draft: z.boolean().optional().default(false),
-  }),
-});
-
-export const collections = { writing, building };
+export const collections = { writing };

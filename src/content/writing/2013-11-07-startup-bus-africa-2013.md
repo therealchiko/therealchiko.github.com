@@ -1,6 +1,5 @@
 ---
 title: Startup Bus Africa 2013
-layout: post
 tags: [startups, entrepreneurship, hackathon, africa-tech, innovation]
 categories: ["Startups"]
 ---

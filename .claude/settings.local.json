@@ -13,7 +13,11 @@
       "WebFetch(domain:usefathom.com)",
       "WebFetch(domain:web.archive.org)",
       "Bash(curl:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "WebFetch(domain:keystatic.com)",
+      "Bash(npx astro:*)",
+      "Bash(npm install:*)",
+      "WebSearch"
     ]
   }
 }

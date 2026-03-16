@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Guide to securing Joomla v1.5 sites
 tags: [joomla, security, web-development, cms, best-practices]
 categories: ["Programming"]

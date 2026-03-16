@@ -1,7 +1,6 @@
 ---
 title: Back to old adventures
 tags: [entrepreneurship, career-change, web-development, freelancing, startup-journey]
-layout: post
 categories: ["Startups"]
 ---
 

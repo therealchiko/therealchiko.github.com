@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "What I learnt pair programming with a senior dev"
 tags: [pair-programming, mentorship, learning, xamarin, professional-growth]
 categories: ["Programming"]

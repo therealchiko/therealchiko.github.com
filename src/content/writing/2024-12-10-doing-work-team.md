@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Doing work: team"
 description: ""
 tags: [leadership, team-building, management, workplace-culture]

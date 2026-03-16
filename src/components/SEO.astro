@@ -1,0 +1,77 @@
+---
+/*
+ * SEO
+ *
+ * Open Graph, Twitter cards, canonical URL, and JSON-LD structured data.
+ * Included in Base layout's <head>.
+ */
+interface Props {
+  title: string;
+  description: string;
+  url: string;
+  type?: 'website' | 'article';
+  publishedDate?: Date;
+}
+
+const {
+  title,
+  description,
+  url,
+  type = 'website',
+  publishedDate,
+} = Astro.props;
+
+const siteName = 'Chiko Mukwenha';
+const siteUrl = 'https://chikomukwenha.co';
+const canonicalUrl = new URL(url, siteUrl).href;
+
+const jsonLd = type === 'article'
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      description,
+      url: canonicalUrl,
+      author: {
+        '@type': 'Person',
+        name: siteName,
+        url: siteUrl,
+      },
+      ...(publishedDate && { datePublished: publishedDate.toISOString() }),
+    }
+  : {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: siteName,
+      description,
+      url: canonicalUrl,
+      author: {
+        '@type': 'Person',
+        name: siteName,
+        url: siteUrl,
+      },
+    };
+---
+
+<!-- Canonical -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Open Graph -->
+<meta property="og:type" content={type} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:site_name" content={siteName} />
+{publishedDate && (
+  <meta property="article:published_time" content={publishedDate.toISOString()} />
+)}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:site" content="@therealchiko" />
+<meta name="twitter:creator" content="@therealchiko" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

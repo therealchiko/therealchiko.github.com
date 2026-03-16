@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Ignore changes to specific git files"
 description: "git, code"
 tags: [git, version-control, development-workflow, technical-tips]

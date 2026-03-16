@@ -1,7 +1,6 @@
 ---
 title: Letting go of your passion
 tags: [personal-growth, mindfulness, adaptability, life-lessons, perspective]
-layout: post
 categories: ["Success"]
 ---
 

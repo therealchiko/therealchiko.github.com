@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Thoughts on coding with AI"
 description: ""
 tags: ["ai", "coding", "programming", "learning", "advice"]

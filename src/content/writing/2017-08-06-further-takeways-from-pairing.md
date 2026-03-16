@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Recent takeaways from pairing"
 description: ""
 tags: [pair-programming, vuejs, collaboration, learning-process, team-practices]

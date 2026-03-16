@@ -1,6 +1,5 @@
 ---
 title: Zimbabwe technology 2012, an outlook
-layout: post
 tags: [tech-industry, zimbabwe, entrepreneurship, web-development, africa-tech]
 categories: ["Startups"]
 ---

@@ -1,7 +1,6 @@
 ---
 title: Removing all-day label from Drupal calendar module
 tags: [drupal, php, calendar-module, web-development, customization]
-layout: post
 categories: ["Programming"]
 ---
 

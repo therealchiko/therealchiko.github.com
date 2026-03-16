@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Cold showers"
 description: ""
 tags: [wellness, habits, personal-development, morning-routine]

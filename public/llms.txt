@@ -1,0 +1,35 @@
+# chikomukwenha.co
+
+> Personal website of Chiko Mukwenha, a product engineer from Zimbabwe writing about making things well in a world that's moving fast.
+
+## About the author
+
+Chiko Mukwenha is a self-taught product engineer with over a decade of experience. Originally from Zimbabwe, he works remotely as a digital nomad. He cares about software craft, boring fundamentals over flashy trends, and building products thoughtfully.
+
+## What this site covers
+
+- Software engineering craft and fundamentals
+- Building products independently
+- Object-oriented design
+- Working with AI as a tool (not a replacement)
+- Personal experiments and reflections
+- Team building and leadership
+
+## Current work
+
+Building contentboo.st, a content creation tool for creators and marketers.
+
+## Key pages
+
+- Homepage: https://chikomukwenha.co/
+- Writing archive: https://chikomukwenha.co/writing/
+- About: https://chikomukwenha.co/about/
+- Now: https://chikomukwenha.co/now/
+- RSS feed: https://chikomukwenha.co/rss.xml
+
+## Contact
+
+- X/Twitter: @therealchiko
+- Email: hi@chikomukwenha.co
+- GitHub: therealchiko
+- LinkedIn: chikomukwenha

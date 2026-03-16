@@ -1,6 +1,5 @@
 ---
 title: Great startup podcasts to listen to
-layout: post
 tags: [startups, podcasts, entrepreneurship, learning-resources, tech-media]
 categories: ["Startups"]
 ---

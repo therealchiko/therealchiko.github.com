@@ -1,7 +1,6 @@
 ---
 title: Success and consistency
 tags: [entrepreneurship, persistence, success-principles, discipline, startup-lessons]
-layout: post
 categories: ["Success"]
 ---
 

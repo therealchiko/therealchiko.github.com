@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Finishing"
 description: ""
 tags: [productivity, habits, discipline, goal-setting, execution]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "How to use UUIDs in Flutter using Drift"
 description: ""
 tags: ["flutter", "offline", "mobile"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Seriousness"
 description: ""
 tags: [work-ethic, focus, dedication, success-mindset, personal-excellence]

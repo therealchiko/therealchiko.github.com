@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chikomukwenha.co/sitemap-index.xml

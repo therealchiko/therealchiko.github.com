@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Learning to learn"
 description: ""
 tags: [learning-techniques, personal-development, productivity, cognitive-science, skill-acquisition]

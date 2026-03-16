@@ -1,7 +1,6 @@
 ---
 title: Living with less
 tags: [minimalism, lifestyle, personal-development, mindfulness, simplicity]
-layout: post
 categories: ["Success"]
 ---
 

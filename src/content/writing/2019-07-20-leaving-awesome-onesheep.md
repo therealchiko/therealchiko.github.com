@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Leaving awesome OneSheep"
 description: ""
 tags: [career-transition, software-engineering, team-culture, professional-growth, christian-tech]

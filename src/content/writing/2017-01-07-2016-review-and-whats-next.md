@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "2016 review and what's next"
 tags: [year-review, goal-setting, career-planning, personal-growth, web-development]
 categories: ["Success"]

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "i agree with boring"
 description: ""
 tags: [software-development, best-practices, code-quality, simplicity, technical-debt]
