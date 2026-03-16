@@ -13,7 +13,7 @@
  *              emailField = "email_address"
  */
 export const newsletter = {
-  /** Set to 'buttondown' | 'substack' | 'convertkit' | 'none' */
+  /** Set to 'buttondown' | 'substack' | 'convertkit' | 'none */
   provider: "buttondown" as const,
 
   /** Form action URL. Update when you create an account. */
