@@ -1,5 +1,6 @@
 ---
 title: Crazy is a feature
+date: 2026-03-21
 category: life, entrepreneurship, success
 tags: []
 draft: false
