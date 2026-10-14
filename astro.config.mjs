@@ -11,7 +11,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://chikomukwenha.co',
   adapter: node({ mode: 'standalone' }),
-  integrations: [react(), markdoc(), keystatic(), sitemap()],
+  integrations: [react(), markdoc(), keystatic(), sitemap({ filter: page => !new URL(page).pathname.startsWith('/og/') })],
   vite: {
     plugins: [tailwindcss()]
   },

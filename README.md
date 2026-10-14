@@ -41,3 +41,16 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Social preview cards
+
+`npm run build` generates the working-poster PNG cards at `/og/`: a blog-wide
+“Making things well.” card and a title-specific card for each published essay.
+Drafts do not get cards. SEO metadata selects the correct image automatically.
+
+The renderer in `src/utils/render-social-image.mjs` uses bundled Archivo fonts,
+measures titles to fit, and exports 1200 × 630 PNGs. No image service or runtime
+server is needed. Article cards use “An essay by Chiko” as their author credit;
+the blog card uses the full name. Update `CARD_VERSION` in
+`src/utils/social-image.ts` when changing the visual design, so shared image
+URLs change alongside the design. Title changes already produce new URLs.
