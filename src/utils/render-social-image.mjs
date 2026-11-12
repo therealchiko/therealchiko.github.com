@@ -23,7 +23,7 @@ export async function renderSocialImage(title, article = false) {
         fontSize, fontWeight: 800, lineHeight: 1.08, letterSpacing: -3,
         overflowWrap: 'break-word',
       }, { id: 'card-title' }),
-      ...(!article ? [text('Software, products and figuring things out.', {
+      ...(!article ? [text('Writing and speaking on software and customer experience.', {
         position: 'absolute', left: 82, top: 394, fontSize: 30,
       })] : []),
       text('chikomukwenha.co', { position: 'absolute', left: 82, bottom: 56, fontSize: 25 }),

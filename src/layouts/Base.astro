@@ -4,6 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import ThemeToggle from '../components/ThemeToggle.astro';
 import SEO from '../components/SEO.astro';
+import { SITE_DESCRIPTION } from '../utils/site';
 import { ViewTransitions } from 'astro:transitions';
 
 interface Props {
@@ -15,13 +16,13 @@ interface Props {
 
 const {
   title,
-  description = "Writing about making things well in a world that's moving fast.",
+  description = SITE_DESCRIPTION,
   type = 'website',
   publishedDate,
 } = Astro.props;
 
 const fullTitle = title === 'Home'
-  ? 'Chiko Mukwenha'
+  ? 'Chiko Mukwenha | Product Engineer & Product Leader'
   : `${title} | Chiko Mukwenha`;
 
 const url = Astro.url.pathname;

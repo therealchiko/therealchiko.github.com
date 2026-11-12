@@ -52,7 +52,7 @@ production routes, the homepage, the writing index, RSS and the sitemap.
 ## Social preview cards
 
 `npm run build` generates the working-poster PNG cards at `/og/`: a blog-wide
-“Making things well.” card and a title-specific card for each published essay.
+“Product engineering. Product leadership.” card and a title-specific card for each published essay.
 Drafts do not get cards. SEO metadata selects the correct image automatically.
 
 The renderer in `src/utils/render-social-image.mjs` uses bundled Archivo fonts,
