@@ -44,6 +44,9 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 
 ## Reading drafts locally
 
+For automated Buttondown email drafts after deployment, see
+[newsletter setup and review workflow](newsletters/README.md).
+
 Run `npm run dev` and open `/writing/<filename-without-extension>/` to read a
 draft with the blog's article layout. Local draft pages show a preview label;
 development pages ask search engines not to index them. Drafts stay out of
