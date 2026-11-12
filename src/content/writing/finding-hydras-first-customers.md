@@ -1,10 +1,10 @@
 ---
 title: Finding Hydra's first customers
-date: 2026-11-04
+date: 2026-11-13
 description: Knocking on doors, cold calling, and offering a website for referrals. What customer acquisition looks like whilst building Hydra.
 category: Entrepreneurship
 tags: [hydra, entrepreneurship, customer-acquisition, building-in-public]
-draft: true
+draft: false
 ---
 
 There has been quite a bit happening whilst building [Hydra](https://usehydra.co.za), and a good portion of it involves getting out and talking to people. We've been knocking on doors, cold calling and arranging to meet business owners, trying to find the people who would benefit from what we're building. I even offered to do a website for our first client in return for three referral clients! No clients from that offer yet, but I think the experience of trying to get something off the ground is worth writing about whilst it's still happening, before the results make it easy to tell a tidy story about what worked.
