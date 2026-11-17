@@ -9,7 +9,7 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.platypus import (
-    SimpleDocTemplate, Paragraph, PageBreak, Table, TableStyle, Spacer,
+    BaseDocTemplate, Frame, PageTemplate, Paragraph, PageBreak, Table, TableStyle, Spacer,
     HRFlowable,
 )
 
@@ -36,8 +36,8 @@ styles = {
     'tagline': ParagraphStyle('tagline', fontName='Manrope-Semibold', fontSize=10, leading=14, textColor=INK, spaceAfter=8),
     'contact': ParagraphStyle('contact', fontName='Manrope', fontSize=8, leading=12, textColor=MUTED),
     'section': ParagraphStyle('section', fontName='Manrope-Semibold', fontSize=8, leading=11, textColor=MUTED, spaceAfter=9, keepWithNext=True),
-    'company': ParagraphStyle('company', fontName='Newsreader-Semibold', fontSize=15, leading=17, textColor=INK),
-    'title': ParagraphStyle('title', fontName='Manrope', fontSize=8.5, leading=12, textColor=MUTED),
+    'company': ParagraphStyle('company', fontName='Manrope-Semibold', fontSize=11.5, leading=16, textColor=INK),
+    'title': ParagraphStyle('title', fontName='Manrope', fontSize=9, leading=13, textColor=MUTED),
     'date': ParagraphStyle('date', fontName='Manrope', fontSize=8, leading=12, textColor=MUTED),
     'body': ParagraphStyle('body', fontName='Manrope', fontSize=9, leading=13, textColor=INK, spaceAfter=6),
     'note': ParagraphStyle('note', fontName='Manrope', fontSize=8.5, leading=12, textColor=MUTED, leftIndent=RAIL, spaceAfter=5),
@@ -82,7 +82,7 @@ def header(lines):
             Paragraph(markup(lines[2]), styles['contact'])]
     right = [Paragraph(markup(field), styles['contact'])
              for line in lines[3:] for field in line.split(' | ')]
-    table = Table([[left, right]], colWidths=[WIDTH-180, 180])
+    table = Table([[left, right]], colWidths=[WIDTH-180, 180], hAlign='LEFT')
     table.setStyle(TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
         ('LEFTPADDING', (0, 0), (-1, -1), 0),
@@ -102,7 +102,7 @@ def role(line, compact=False):
         ([Paragraph(markup(company), styles['company']),
           Paragraph(markup(title), styles['title'])] if not compact else
          Paragraph(f'<b>{markup(company)}</b> / {markup(title)}', styles['body'])),
-    ]], colWidths=[RAIL, WIDTH-RAIL])
+    ]], colWidths=[RAIL, WIDTH-RAIL], hAlign='LEFT')
     table.setStyle(TableStyle([
         ('VALIGN', (0, 0), (-1, -1), 'TOP'),
         ('LEFTPADDING', (0, 0), (-1, -1), 0),
@@ -143,10 +143,16 @@ def build():
         else:
             story.append(Paragraph(markup(line), styles['note' if in_role else 'body']))
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-    doc = SimpleDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=48, leftMargin=48,
+    doc = BaseDocTemplate(str(OUTPUT), pagesize=A4, rightMargin=48, leftMargin=48,
                            topMargin=48, bottomMargin=54,
                            title='Chiko Mukwenha | React & Product Engineering', author='Chiko Mukwenha')
-    doc.build(story, onFirstPage=footer, onLaterPages=footer)
+    # A single zero-padding frame keeps paragraphs, rules, and tables on the
+    # same 48-point left edge. SimpleDocTemplate's default frame padding made
+    # full-width tables protrude six points past the surrounding paragraphs.
+    frame = Frame(48, 54, WIDTH, A4[1] - 48 - 54,
+                  leftPadding=0, rightPadding=0, topPadding=0, bottomPadding=0)
+    doc.addPageTemplates(PageTemplate(id='CV', frames=[frame], onPage=footer))
+    doc.build(story)
     print(OUTPUT)
 
 

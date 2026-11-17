@@ -16,13 +16,15 @@ python3 career/wholechain/render_cv.py
 
 ## Presentation
 
-Newsreader provides the name and main employer headings; Manrope provides body
-text, metadata, and section labels. Static TrueType files were obtained through
+Newsreader provides the name; Manrope provides semibold employer headings,
+regular job titles, body text, metadata, and section labels. Static TrueType files were obtained through
 Google Fonts, using regular and semibold weights, and are embedded in the PDF.
 Sources: [Newsreader](https://fonts.google.com/specimen/Newsreader) and
 [Manrope](https://fonts.google.com/specimen/Manrope). The layout uses white space,
 slate text, fine grey rules, a separate date column, and compact earlier roles.
 Primary experience stays on page one; technical expertise starts page two.
+A zero-padding document frame aligns section labels, profile text, rules, and
+the date column to the same 48-point margin; role text uses a shared inset.
 
 ## Editorial decisions
 
