@@ -12,14 +12,14 @@ Software engineer building production software since 2016, with substantial expe
 
 ## Frontend & product expertise
 
-**Frontend:** React, TypeScript, JavaScript, HTML, CSS, atomic CSS, Next.js, Ember, Vue.js; component libraries, Shopify Polaris and App Bridge.
+**Frontend:** React, TypeScript, JavaScript, HTML, CSS, atomic CSS, Next.js, React Native, Ember, Vue.js; component libraries, Shopify Polaris and App Bridge.
 **Product & quality:** Jest, Storybook, end-to-end testing, FullStory, Mixpanel, localisation, WCAG guidance, accessible forms, keyboard navigation, code review.
 
 ## Selected experience
 
 ### Hydra | Lead Architect & Full Stack Engineer | 2026-present
 
-- Architected Next.js, Go, and Flutter applications for merchant retention, WhatsApp messaging, rewards, and campaigns.
+- Architected React/Next.js, Go, and Flutter applications for merchant retention, WhatsApp messaging, rewards, and campaigns.
 - Built rewards integration workflows covering campaign budgets, voucher issuance, tenant isolation, and retry handling.
 
 ### Customer.io | Software Engineer - Promoted to L3 | 2021-2024
@@ -43,7 +43,7 @@ AI-powered Shopify app; acquired in late 2025.
 
 ### JaSure / Santam Switch | Senior Mobile Engineer | 2019-2021
 
-- One of two mobile engineering leads, taking the insurance application from prototype to App Store launch.
+- One of two mobile engineering leads, taking the React Native insurance application from prototype to App Store launch.
 - Led a UI overhaul informed by session recordings and discussions with the product team.
 - Introduced end-to-end testing and refactored the application to separate pricing logic from the interface.
 - Integrated in-app support, real-time vehicle valuations, and cover activation across systems.
