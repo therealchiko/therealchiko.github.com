@@ -19,7 +19,7 @@ current Hydra role, Customer.io migration, and ContentBoost's Next.js/Polaris
 work on page one. Restore JaSure's session-recording-informed UI overhaul,
 KeepTabs' MVP scoping, and Langham's prototype feedback from the older CV.
 Retain verified scope figures from the 2026 CV but omit the older percentage
-claims. Preserve the newer Customer.io title pending confirmation.
+claims. Retain the newer CV's Customer.io title; no title change was supplied.
 
 ## Evidence and public research
 
@@ -39,23 +39,29 @@ Reviewed on 17 November 2026:
 - [Pluma's technical overview](https://pluma.customer.io/overview/about)
   describes React and Ember APIs, shared TypeScript types, Storybook,
   designer/engineer review, and accessibility following WCAG 2.2. These current
-  practices do not establish that Chiko used or built Pluma, used Storybook,
-  or worked to WCAG 2.2 during his tenure. None of those personal claims is
-  included in the CV.
+  practices do not establish that Chiko used or built Pluma or worked to
+  WCAG 2.2 during his tenure. Neither claim is included in the CV. Storybook
+  experience is independently confirmed by Chiko.
 
 The public material supports the React/Ember and accessibility context. It does
 not independently establish the migration's timeline, completion, or Chiko's
 individual contribution. Those details come from Chiko.
 
-## Pending details
+## Follow-up details confirmed by Chiko
 
-- Migration dates, personally owned workflows, state-management tools,
-  component-library work, and testing tools.
-- One concrete accessibility implementation and its verification method.
-- Hydra's start month/year and confirmation of the Customer.io title.
+Chiko confirms Platforms team membership, integration work, customisations to
+the React-Ember bridge, building and maintaining the design library, Jest,
+Storybook, atomic CSS, bento grid layouts, and substantial performance work.
+He used FullStory and Mixpanel to inform decisions. Accessible forms and
+keyboard navigation were priorities. Hydra started in 2026. The restored
+JaSure and Langham UX work is accurate without the older percentage claims.
 
-Until answered, use broad supported wording, retain "Current" for Hydra,
-and avoid named tools, compliance levels, or unconfirmed leadership claims.
+The CV selects the most relevant details; it does not claim ownership of the
+entire migration, name the component library Pluma, specify a state-management
+library, claim a measured speed improvement, or claim WCAG conformance.
+Exact migration dates and accessibility verification tools remain unspecified;
+they are not needed for the current supported wording. No start month for
+Hydra is assumed. Retain "Software Engineer - Promoted to L3" from the 2026 CV.
 
 ## Verification
 
