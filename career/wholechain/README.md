@@ -83,3 +83,17 @@ Hydra is assumed. Retain "Software Engineer - Promoted to L3" from the 2026 CV.
 Rendered to two A4 pages; both pages inspected visually. Text extraction checked
 for readable order and complete content. Contact fields are PDF hyperlinks.
 Original PDFs were not modified.
+
+## Backend positioning
+
+Chiko explicitly requests that backend depth and end-to-end delivery be presented
+as strengths. The profile and headline now give Go equal visibility alongside
+React and TypeScript. Customer.io's backend messaging and asynchronous processing
+work is restored; ContentBoost's Go concurrency rationale and SQL migrations
+come from the older CV. Backend expertise is a first-class skills category.
+
+[Go's official FAQ](https://go.dev/doc/faq#goroutines) and
+[Effective Go](https://go.dev/doc/effective_go#concurrency) describe its lightweight
+concurrency model. The CV ties that strength to concurrent catalogue ingestion
+and LLM generation; it does not claim that selecting Go alone guarantees fast
+software or establish unmeasured throughput improvements.

@@ -1,6 +1,6 @@
 # Chiko Mukwenha
 
-React & TypeScript | Frontend & Product Engineering
+React, TypeScript & Go | Product Engineering
 
 Johannesburg, South Africa | Open to remote opportunities
 hi@chikomukwenha.co | chikomukwenha.co
@@ -8,7 +8,7 @@ github.com/chikomukwenha | linkedin.com/in/chikomukwenha
 
 ## Profile
 
-Software engineer building production software since 2016, with substantial experience migrating Customer.io's large application from Ember to React. Builds and maintains component libraries, improves frontend performance, and uses product analytics to guide UX decisions. Combines React and TypeScript with product ownership, accessible interfaces, API integration, and automated testing.
+Full stack engineer building production software since 2016, combining React and TypeScript expertise with deep backend experience in Go, APIs, and asynchronous systems. Understands the complete path from data and business logic to accessible interfaces, testing, and production operation. Made substantial contributions to Customer.io's Ember-to-React migration; builds component libraries, optimises performance, and uses analytics to guide product decisions.
 
 ## Selected experience
 
@@ -23,23 +23,24 @@ Software engineer building production software since 2016, with substantial expe
 - Built and maintained the design component library, using atomic CSS, Storybook, and Jest in frontend development and testing.
 - Contributed extensively to frontend performance optimisation; used FullStory and Mixpanel to inform product and UX decisions.
 - Designed and shipped a multilingual subscription centre with preference management and opt-out flows. Prioritised accessible forms, keyboard navigation, and WCAG guidance in frontend work.
-- Delivered activation and engagement features with product and data teams; mentored new engineers and contributed to code review, API design, and testing practices.
+- Worked on high-throughput backend messaging infrastructure and asynchronous processing, alongside frontend feature delivery. Mentored engineers and contributed to API design, code review, and testing practices.
 
 ### ContentBoost / Findable | Founder & Full Stack Engineer | 2025
 
 AI-powered Shopify app; acquired in late 2025.
 
-- Designed and built the product end to end, with a Next.js frontend, Go Fiber REST backend, PostgreSQL, and Cloudflare R2.
+- Owned the full system: Next.js frontend, Go Fiber REST APIs, PostgreSQL with SQL migrations, and Cloudflare R2. Chose Go for its efficient concurrency model, running catalogue ingestion and LLM generation jobs concurrently.
 - Built the merchant interface using Shopify Polaris components and App Bridge; implemented OAuth installation and subscription billing, and completed App Store review.
 
 <!-- pagebreak -->
 
-## Frontend & product expertise
+## Engineering & product expertise
 
 **Frontend:** React, TypeScript, JavaScript, HTML, CSS, atomic CSS, Next.js, React Native, Ember, Vue.js; component libraries, Shopify Polaris and App Bridge.
 **Product & quality:** Jest, Storybook, end-to-end testing, FullStory, Mixpanel, localisation, WCAG guidance, accessible forms, keyboard navigation, code review.
 
-**Supporting stack:** Go, Node.js, PostgreSQL, REST APIs, Flutter, Firebase, AWS, Cloudflare R2, Docker, CI/CD.
+**Backend:** Go (Fiber), concurrent workloads, asynchronous processing, REST API design, PostgreSQL, SQL migrations, tenant isolation, retry handling.
+**Delivery & infrastructure:** AWS, Cloudflare R2, Docker, CI/CD, Node.js, Flutter, Firebase.
 
 ## Product, UX & mobile experience
 
@@ -76,6 +77,4 @@ AI-powered Shopify app; acquired in late 2025.
 
 ## Certifications & training
 
-AWS Certified Developer - Associate
-Advanced React Native Development - Udemy
-Python Programming for Data Science - Coursera
+AWS Certified Developer - Associate; Advanced React Native Development - Udemy; Python Programming for Data Science - Coursera.
