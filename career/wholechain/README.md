@@ -6,11 +6,23 @@ blog's `src/content` and `public` directories and are not included in site pages
 
 ## Rebuild
 
-Requires ReportLab and the macOS Arial fonts referenced in `render_cv.py`:
+Requires ReportLab. Newsreader and Manrope font files are bundled in `fonts/`
+with their SIL Open Font Licenses; no system fonts or network access are needed
+to render:
 
 ```sh
 python3 career/wholechain/render_cv.py
 ```
+
+## Presentation
+
+Newsreader provides the name and main employer headings; Manrope provides body
+text, metadata, and section labels. Static TrueType files were obtained through
+Google Fonts, using regular and semibold weights, and are embedded in the PDF.
+Sources: [Newsreader](https://fonts.google.com/specimen/Newsreader) and
+[Manrope](https://fonts.google.com/specimen/Manrope). The layout uses white space,
+slate text, fine grey rules, a separate date column, and compact earlier roles.
+Primary experience stays on page one; technical expertise starts page two.
 
 ## Editorial decisions
 
@@ -52,7 +64,8 @@ individual contribution. Those details come from Chiko.
 Chiko confirms Platforms team membership, integration work, customisations to
 the React-Ember bridge, building and maintaining the design library, Jest,
 Storybook, atomic CSS, bento grid layouts, and substantial performance work.
-He used FullStory and Mixpanel to inform decisions. Accessible forms and
+He used FullStory and Mixpanel to inform decisions. Subsequent clarification
+confirms JaSure used React Native and Hydra uses React through Next.js. Accessible forms and
 keyboard navigation were priorities. Hydra started in 2026. The restored
 JaSure and Langham UX work is accurate without the older percentage claims.
 

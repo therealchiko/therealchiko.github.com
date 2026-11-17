@@ -10,11 +10,6 @@ github.com/chikomukwenha | linkedin.com/in/chikomukwenha
 
 Software engineer building production software since 2016, with substantial experience migrating Customer.io's large application from Ember to React. Builds and maintains component libraries, improves frontend performance, and uses product analytics to guide UX decisions. Combines React and TypeScript with product ownership, accessible interfaces, API integration, and automated testing.
 
-## Frontend & product expertise
-
-**Frontend:** React, TypeScript, JavaScript, HTML, CSS, atomic CSS, Next.js, React Native, Ember, Vue.js; component libraries, Shopify Polaris and App Bridge.
-**Product & quality:** Jest, Storybook, end-to-end testing, FullStory, Mixpanel, localisation, WCAG guidance, accessible forms, keyboard navigation, code review.
-
 ## Selected experience
 
 ### Hydra | Lead Architect & Full Stack Engineer | 2026-present
@@ -38,6 +33,13 @@ AI-powered Shopify app; acquired in late 2025.
 - Built the merchant interface using Shopify Polaris components and App Bridge; implemented OAuth installation and subscription billing, and completed App Store review.
 
 <!-- pagebreak -->
+
+## Frontend & product expertise
+
+**Frontend:** React, TypeScript, JavaScript, HTML, CSS, atomic CSS, Next.js, React Native, Ember, Vue.js; component libraries, Shopify Polaris and App Bridge.
+**Product & quality:** Jest, Storybook, end-to-end testing, FullStory, Mixpanel, localisation, WCAG guidance, accessible forms, keyboard navigation, code review.
+
+**Supporting stack:** Go, Node.js, PostgreSQL, REST APIs, Flutter, Firebase, AWS, Cloudflare R2, Docker, CI/CD.
 
 ## Product, UX & mobile experience
 
@@ -72,12 +74,8 @@ AI-powered Shopify app; acquired in late 2025.
 
 - Maintained a high-traffic Drupal platform, managed an infrastructure migration, and integrated Apache Solr search.
 
-## Supporting technologies
-
-**Supporting stack:** Go, Node.js, PostgreSQL, REST APIs, Flutter, Firebase, AWS, Cloudflare R2, Docker, CI/CD.
-
 ## Certifications & training
 
-- AWS Certified Developer - Associate
-- Advanced React Native Development - Udemy
-- Python Programming for Data Science - Coursera
+AWS Certified Developer - Associate
+Advanced React Native Development - Udemy
+Python Programming for Data Science - Coursera
