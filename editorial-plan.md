@@ -11,7 +11,7 @@ Publish new articles one week apart. Dates below are planned publication dates; 
 | 28 October 2026 | Uses, 2026: the software side | Draft |
 | 13 November 2026 | Finding Hydra's first customers | Included in the site build |
 | 11 November 2026 | Hydra's Railway outage and having a backup plan (working title) | Idea; needs incident details before drafting |
-| TBD | Don't move at the speed of AI | Draft; created 17 November 2026, publication date to be set on release |
+| 17 November 2026 | There's really no need to move at the speed of AI | Release approved; includes Buttondown announcement |
 
 For the customer-acquisition draft, the confirmed starting points are door-to-door outreach, cold calling, arranging meetings with business owners, conversations with early users, and an offer to build the first client's website in return for three referral clients. As of 27 October, the offer has produced no clients; introductions and acceptance have not been confirmed. Update the outcome before publication if it changes. A specific early-user conversation would strengthen a later revision; obtain permission before identifying or quoting anyone.
 
