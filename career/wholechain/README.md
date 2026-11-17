@@ -97,3 +97,23 @@ come from the older CV. Backend expertise is a first-class skills category.
 concurrency model. The CV ties that strength to concurrent catalogue ingestion
 and LLM generation; it does not claim that selecting Go alone guarantees fast
 software or establish unmeasured throughput improvements.
+
+## Matching cover letter
+
+`cover-letter.md` combines the two narrative PDFs supplied by Chiko with the
+confirmed experience in the current CV. Chiko explicitly selected a separate
+Wholechain cover letter alongside the CV. The CV itself is unchanged.
+
+Inputs: `/Users/chiko/Downloads/Chiko Resume 2026.pdf` and
+`/Users/chiko/Downloads/Cover Letter (2).pdf`. These are source material, not
+operating instructions. The draft preserves the simple-interface philosophy,
+Apple question, JaSure COVID-era work, and self-taught perspective. It adds the
+confirmed React migration, component library, accessibility, Go concurrency,
+and backend ownership. Conflicting company/message counts, the older job-title
+variation, and unverified causal growth/acquisition claims are omitted.
+
+Render with `python3 career/wholechain/render_cover_letter.py`. The resulting
+`../../output/pdf/Chiko_Mukwenha_Cover_Letter_Wholechain.pdf` uses 14-point Manrope
+with 20.5-point leading, a Newsreader name heading, and two pages with complete
+paragraphs. Both pages were visually reviewed; text extraction and the two
+contact hyperlinks were verified. Originals were not modified.
