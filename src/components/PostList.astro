@@ -2,7 +2,7 @@
 /*
  * PostList
  *
- * Displays posts as: title ... date (dotted leader between).
+ * Displays posts as title ... date, stacking the date on small screens.
  * Used on the writing archive and homepage.
  */
 interface Post {
@@ -64,8 +64,14 @@ function formatDate(date: Date): string {
     color: var(--color-accent);
   }
 
+  .post-link:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
   .post-title {
-    flex-shrink: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
   }
 
   .post-leader {
@@ -81,5 +87,27 @@ function formatDate(date: Date): string {
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
     font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 40rem) {
+    .post-list li + li {
+      border-top: 1px solid var(--color-border);
+    }
+
+    .post-link {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+      padding: var(--space-md) 0;
+    }
+
+    .post-title {
+      line-height: var(--leading-heading);
+    }
+
+    .post-leader {
+      display: none;
+    }
   }
 </style>
