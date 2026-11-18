@@ -2,13 +2,30 @@
 /*
  * Header
  *
- * Minimal top presence: just the site name linking home.
- * Navigation lives in the Footer.
+ * Site name, with immediately visible navigation on smaller screens.
+ * Desktop navigation also lives in the Footer.
  */
+const navItems = [
+  { href: '/writing/', label: 'Writing' },
+  { href: '/now/', label: 'Now' },
+  { href: '/about/', label: 'About' },
+];
+const pathname = Astro.url.pathname;
 ---
 
 <header class="site-header">
   <a href="/" class="site-name">Chiko Mukwenha</a>
+  <nav class="mobile-nav" aria-label="Main">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        aria-current={pathname === item.href ? 'page' : undefined}
+        class:list={{ active: pathname.startsWith(item.href) }}
+      >
+        {item.label}
+      </a>
+    ))}
+  </nav>
 </header>
 
 <style>
@@ -30,5 +47,51 @@
 
   .site-name:hover {
     color: var(--color-accent);
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  .site-name:focus-visible,
+  .mobile-nav a:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+  }
+
+  @media (max-width: 40rem) {
+    .site-header {
+      padding-top: var(--space-lg);
+    }
+
+    .site-name {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+
+    .mobile-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+      margin-top: var(--space-xs);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .mobile-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: var(--space-xs) 0;
+      border-bottom: 2px solid transparent;
+      font-family: var(--font-ui);
+      font-size: var(--font-size-sm);
+      text-decoration: none;
+    }
+
+    .mobile-nav a.active {
+      border-bottom-color: var(--color-accent);
+      color: var(--color-accent);
+    }
   }
 </style>
