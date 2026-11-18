@@ -76,6 +76,7 @@ const postContext = context === 'post';
 
   .signup-input {
     flex: 1;
+    min-width: 0;
     font-family: var(--font-ui);
     font-size: var(--font-size-sm);
     padding: var(--space-xs) var(--space-sm);
@@ -118,5 +119,21 @@ const postContext = context === 'post';
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
     margin: var(--space-xs) 0 0;
+  }
+
+  @media (max-width: 40rem) {
+    .signup-form {
+      flex-wrap: wrap;
+    }
+
+    .signup-input {
+      flex-basis: 12rem;
+      font-size: 1rem;
+    }
+
+    .signup-input,
+    .signup-button {
+      min-height: 44px;
+    }
   }
 </style>
